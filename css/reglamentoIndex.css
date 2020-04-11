@@ -1,0 +1,223 @@
+/*BODY*/
+#contenido{
+	width: 80%;
+	max-width: 1000px;
+	background-color: rgba(98, 98, 98, 0.8);
+	margin: 3% auto;
+	margin-top: 9%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	border-radius: 5px;
+	box-shadow: 0px 0px 8px 1px rgba(0,0,0,1);
+		-webkit-box-shadow: 0px 0px 8px 1px rgba(0,0,0,1);
+		-moz-box-shadow: 0px 0px 8px 1px rgba(0,0,0,1);
+}
+
+#titulo{
+	width: 88%;
+	margin: 3% auto;
+}
+
+#main #titulo h2{
+	font-family: RobotoBold;
+	color: #fff;
+	font-size: 25px;
+	transform:scaley(2);
+	text-shadow: -1px -1px 1px #000, 
+				 1px 1px 1px #000, 
+				 -1px 1px 1px #000, 
+				 1px -1px 1px #000;
+}
+
+#main #detalle{
+	width: 90%;
+	margin: auto;
+}
+
+#main #detalle p{
+	font-family: RobotoRegular;
+	font-size: 15px;
+	padding-left: 1%;
+}
+
+#main #detalle #item{
+	margin-top: 3%;
+	margin-bottom: 1%;
+	background-color: rgba(51, 51, 51, 1);
+	border-radius: 5px;
+	box-shadow: 0px 0px 8px 1px rgba(0,0,0,1);
+		-webkit-box-shadow: 0px 0px 8px 1px rgba(0,0,0,1);
+		-moz-box-shadow: 0px 0px 8px 1px rgba(0,0,0,1);
+}
+
+#main #detalle #item p{
+	font-family: RobotoRegular;
+	font-size: 17px;
+	transform:scaley(1.5);
+	padding: 1%;
+	text-shadow: -1px -1px 1px #000, 
+				 1px 1px 1px #000, 
+				 -1px 1px 1px #000, 
+				 1px -1px 1px #000;
+}
+
+#main #detalle #descripcion p{
+	text-indent: 2%;
+	padding-left: 1%;
+}
+
+/*TABLET*/
+@media screen and (max-width: 780px), only screen and (max-device-width: 780px){ 
+	html { font-size: 70%; }
+	
+	body{
+		background-image: url(../Images/fondotablet.jpg);
+		background-attachment: fixed; 
+	}
+    
+    #menuCelular{
+        display: none;
+    }
+
+	#subheader #nombre{
+		width: 60%;
+	}
+
+	#subheader #nombre img{
+		width: 35%;
+	}
+
+	#subheader #logotipo{
+		width: 30%;
+		max-width: 450px;
+	}
+	
+	#subheader #logotipo img{
+		width: 20%;
+	}
+
+	#subheader #logotipo #rusia{
+		width: 30%;
+		margin-left: 25%;
+	}
+	
+	.proximospartidos{
+		display: none;
+	}
+
+	#menu{
+		margin-top: 15%;
+		margin-bottom: 5%;
+	}
+
+    .menu{
+        width: 90%;
+    }
+    
+	.menu ul li a.amenu{
+		font-size: 200%;
+		margin-top: 0;
+	}
+
+	.usuario p{
+		display: none;
+	}
+
+	.usuario img{
+		width: 5%;
+		margin-top: -1%;
+	}
+
+	.menuespecial{
+		font-size: 200%;
+	}
+	
+	#contenido{
+		width: 90%;
+        margin-top: 18%;
+	}
+    
+    #main #titulo h2{
+        font-size: 120%;    
+        margin-bottom: 5%;
+    }
+    
+    #main #detalle #item p{
+        font-size: 100%;
+    }
+    
+    #main #detalle #descripcion p{
+        font-size: 100%;
+    }
+}
+
+/*CELULAR*/
+@media screen and (max-width: 460px), only screen and (max-device-width: 460px){
+	html { font-size: 42.5%; }
+	
+	body{
+		background-image: url(../Images/fondoweb.jpg);
+		background-attachment: fixed; 
+	}
+    
+	#subheader #nombre{
+		width: 60%;
+	}
+
+	#subheader #nombre img{
+		width: 35%;
+	}
+
+	#subheader #logotipo{
+		width: 30%;
+		max-width: 450px;
+	}
+	
+	#subheader #logotipo img{
+		width: 20%;
+	}
+
+	#subheader #logotipo #rusia{
+		width: 30%;
+		margin-left: 25%;
+	}
+
+	#contenido #grupos #grupo #NombreGrupo{
+		font-size: 450%;
+	}
+
+	.proximospartidos{
+		display: none;
+	}
+    
+    .menu{
+        width: 90%;
+    }
+    
+    .menu ul li a.amenu{
+        font-size: 400%;
+        padding: 1% 2%;
+    }
+	
+	#contenido{
+		width: 90%;
+        margin-top: 18%;
+	}
+    
+    #main #titulo h2{
+        font-size: 150%;    
+        margin-bottom: 5%;
+    }
+    
+    #main #detalle p{
+        font-size: 120%;
+    }
+    
+    #main #detalle #item p{
+        font-size: 120%;
+    }
+    
+    #main #detalle #descripcion p{
+        font-size: 120%;
+    }
+}

@@ -1,0 +1,332 @@
+#contenido{
+	width: 80%;
+	max-width: 1000px;
+	margin-bottom: 45%;
+}
+
+#grupos{
+	margin-top: 6%;
+}
+
+.grupos{
+	width: 70%;
+	background-color: rgba(98, 98, 98, 0.8);
+	padding: 1%;
+	text-align: right;
+	float: left;
+	border-radius: 5px;
+	box-shadow: 0px 0px 8px 1px rgba(0,0,0,1);
+		-webkit-box-shadow: 0px 0px 8px 1px rgba(0,0,0,1);
+		-moz-box-shadow: 0px 0px 8px 1px rgba(0,0,0,1);
+}
+
+.grupos-cabecera{
+	padding-bottom: 2%;
+	border-bottom: 1px solid #fff;
+}
+
+.crear{
+	float: left;
+	width: 20%;
+	margin-top: .5%;
+	margin-left: 1%;
+	font-family: RobotoRegular;
+	font-size: 1em;
+	color: #fff;
+	transform:scaley(1.5);
+	border: 1px outset black;
+	background-color: rgba(98, 98, 98, 1);
+	border-radius: 5px;
+	box-shadow: 5px 5px 4px 0px rgba(0,0,0,0.75);
+		-webkit-box-shadow: 5px 5px 4px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 5px 5px 4px 0px rgba(0,0,0,0.75);
+}
+
+.busqueda form{
+	width: 40%;
+	display: inline-flex;
+	font-size: .9em;
+	text-align: right;
+	margin-right: 1%;
+}
+
+.busqueda form .busqueda-input::placeholder{
+	color: #b4b4b4;
+}
+
+.busqueda form .busqueda-input{
+	font-size: inherit;
+	border: 2px solid #fff;
+	background-color: transparent;
+	border-radius: 5px 0 0 5px;
+	font-family: RobotoThin;
+	color: #fff;
+	width: 85%;
+	padding-left: 4%;
+}
+
+.busqueda form .busqueda-button{
+	border: 2px solid #fff;
+	border-left: 0px;
+	background-color: transparent;
+	border-radius: 0 5px 5px 0;
+	float: right;
+	width: 15%;
+}
+
+.busqueda form .busqueda-button img{
+	width: 60%;
+	margin-top: 2px;
+}
+
+.grupos-detalle{
+	padding: 2% 0;
+	text-align: left;
+	width: 100%;
+}
+
+.grupos-detalle form{
+	width: 100%;
+}
+
+.grupos-detalle form .item-form{
+	width: 100%;
+	text-align: left;
+	padding: 1%;
+}
+
+.grupos-detalle form .item-form label{
+	font-family: RobotoRegular;
+	font-size: 1em;
+	color: #fff;
+	display: block;
+}
+
+.grupos-detalle form .item-form #nombregrupo{
+	text-transform:uppercase;
+}
+
+.grupos-detalle form .item-form>input, #textarea-form{
+	width: 65%;
+	border: 2px solid grey;
+	border-radius: 4px;
+	font-family: RobotoRegular;
+	font-size: .9em;
+	display: inline-block;
+	box-shadow: 5px 7px 4px 0px rgba(0,0,0,0.75);
+		-webkit-box-shadow: 5px 7px 4px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 5px 7px 4px 0px rgba(0,0,0,0.75);
+	padding-left: 1%;
+}
+
+.grupos-detalle form input[type="submit"]{
+	float: left;
+	width: 20%;
+	height: 30px;
+	background-color: rgba(179, 179, 179, 0.5);
+	margin-top: 2%;
+	margin-left: 1%;
+	margin-bottom: 2%;
+	border-radius: 5px;
+	font-family: RobotoRegular;
+	font-size: .9em;
+	color: #fff;
+	cursor: pointer;
+	box-shadow: 5px 7px 4px 0px rgba(0,0,0,0.75);
+		-webkit-box-shadow: 5px 7px 4px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 5px 7px 4px 0px rgba(0,0,0,0.75);
+}
+
+
+.grupos-detalle form .item-form span{
+	margin-left: 1%;
+	vertical-align: top;
+	font-family: CenturyRegular;
+	font-size: .6em;
+	color: #9B9A9A;
+	width: 22%;
+	text-align: left;
+	background-image: url(Images/help.png);
+	display: inline-block;
+}
+
+.grupos-detalle form .item-form img{
+	width: 3%;
+	opacity: .6;
+	margin-left: 1%;
+	vertical-align: top;
+}
+
+.grupos-detalle .grupos-busqueda{
+	width: 100%;
+	font-family: RobotoRegular;
+}
+
+.grupos-detalle .grupos-busqueda .grupos-busqueda-resultados{
+	background-color: rgba(45, 45, 45, 0.7);
+	margin: 1%;
+	padding: 1% 2% 6% 0;
+	border-radius: 5px;
+	text-transform: uppercase;
+}
+
+.grupos-detalle .grupos-busqueda .grupos-busqueda-resultados .grupos-busqueda-nombres{
+	float: left;
+	padding-left: 2%;
+}
+
+.grupos-detalle .grupos-busqueda .grupos-busqueda-resultados .grupos-busqueda-nombres #cantidad-miembros{
+	font-size: .6em;
+	text-transform: lowercase;
+	color: #cccccc;
+	text-align: left;
+}
+
+.grupos-detalle .grupos-busqueda .grupos-busqueda-resultados .solicitar-ingreso{
+	float: right;	
+}
+
+.grupos-detalle .grupos-busqueda .grupos-busqueda-resultados .solicitar-ingreso a{
+	cursor: pointer;
+}
+
+.grupos-detalle .grupos-busqueda .grupos-busqueda-resultados .solicitar-ingreso img{
+	width: 10%;
+	float: right;
+	margin-top: 2%;
+}
+
+.grupos-detalle .grupos-busqueda .grupos-busqueda-resultados .solicitar-ingreso p{
+	font-size: .6em;
+	margin-top: 4.5%;
+	text-align: right;
+}
+
+.grupos-detalle .grupos-busqueda button{
+	float: right;
+	width: 20%;
+	height: 30px;
+	background-color: rgba(98, 98, 98, 1);
+	margin-top: 2%;
+	margin-left: 1%;
+	margin-bottom: 2%;
+	margin-right: 1%;
+	border-radius: 5px;
+	font-family: RobotoRegular;
+	font-size: .9em;
+	color: #fff;
+	border: 1px outset black;
+	box-shadow: 5px 7px 4px 0px rgba(0,0,0,0.75);
+		-webkit-box-shadow: 5px 7px 4px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 5px 7px 4px 0px rgba(0,0,0,0.75);
+}
+
+.swal-title, .swal-text, .swal-button {
+  font-family: RobotoRegular;
+}
+
+.swal-footer {
+  background-color: rgb(245, 248, 250);
+  margin-top: 32px;
+  border-top: 1px solid #E9EEF1;
+  overflow: hidden;
+}
+
+.swal-overlay {
+  background-color: rgba(49, 49, 49, .7);
+}
+
+.swal-button {
+  padding: 7px 19px;
+  border-radius: 2px;
+  background-color: #4962B3;
+  font-size: 12px;
+  border: none;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+/*TABLET*/
+@media screen and (max-width: 1000px){ 
+	html { font-size: 70%; }
+	
+	body{
+		background-image: url(../Images/fondotablet.jpg);
+		background-attachment: fixed; 
+	}
+
+	#subheader #nombre{
+		width: 60%;
+	}
+
+	#subheader #nombre img{
+		width: 35%;
+	}
+
+	#subheader #logotipo{
+		width: 30%;
+		max-width: 450px;
+	}
+	
+	#subheader #logotipo img{
+		width: 20%;
+	}
+
+	#subheader #logotipo #rusia{
+		width: 30%;
+		margin-left: 25%;
+	}
+	
+	.proximospartidos{
+		display: none;
+	}
+
+	#menu{
+		margin-top: 15%;
+		margin-bottom: 5%;
+	}
+
+	.menu ul li a.amenu{
+		font-size: 200%;
+		margin-top: 0;
+	}
+
+	.usuario p{
+		display: none;
+	}
+
+	.usuario img{
+		width: 5%;
+		margin-top: -1%;
+	}
+
+	.menuespecial{
+		font-size: 120%;
+	}
+
+	#contenido{
+		width: 90%;
+		font-size: 200%;
+	}
+
+	.grupos{
+		width: 100%;
+	}
+
+	.grupos-busqueda-nombre #cantidad-miembros{
+		margin-top: 10%;
+	}
+
+	.panel-lateral{
+		display: none;
+	}
+
+	footer{
+		margin-top: 80%;
+	}
+
+	footer nav ul #final li a{
+		color: white;
+		font-size: 200%;
+	}
+}

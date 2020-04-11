@@ -1,0 +1,42 @@
+.nav-home .login{ background: url('../img/back-but-login.jpg') repeat-x #869226; padding: 10px; width: 160px; position: absolute; right: 70px; top: 20px; text-align: center; border-radius: 3px; cursor: pointer; font-family: "OpenSans";}
+.nav-home .login:hover{background: url('../img/back-but-blue.jpg') repeat-x #043670; color: #fff;}
+.nav-home .login span{ background: url('../img/icon-login.png') no-repeat; width: 32px; height: 32px; display: block; position: absolute; left: 5px; top: 5px;}
+.nav-home .box-login{ display: none; background: #fff; border: 1px solid #DBDBDB; padding: 20px; position: absolute; right: 70px; top: 80px; z-index: 1; width: 25%; box-shadow: 0px 0px 5px #999;}
+.nav-home .box-login .tip-box-login{background: url('../img/tip-box-login.png') no-repeat; width: 20px; height: 9px; display: block; position: absolute; top: -9px; right: 60px;}
+.nav-home .box-login .login-web .user-error{ color: red; display: block;}
+.nav-home .box-login .login-web .pass-error{ color: red; display: block;}
+
+.nav-home .box-login .login-web .login-error{ color: red; display: block;}
+.nav-home form.recupero-pass .login-error{ color: red; display: block; }
+
+.form-login input.input-ingresar, .recupero-pass input.input-ingresar{
+    margin: 2px 0 8px 0;
+    padding: 10px;
+    border: 0px;
+    border-radius:3px;
+    background: url('../img/back-but-blue.jpg') repeat-x #043670;
+    color: #FFF;
+    cursor: pointer;
+    width: 100%;
+    font-size: .9em;
+    display: block;
+}
+.box-login .forgot-password-back{
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 0.75em;
+}
+
+form.form-login #user, form.form-login #password, form.recupero-pass #user{padding: 3%; border: 0px; border-radius: 3px; width: 94%; border: 1px solid #DBDBDB; margin-bottom: 8px;}
+.forgot-password{margin-top: 10px;color: #333;text-decoration: none;}
+
+.forgot-pass a{color: #2C84C8; font-size: .9em;}
+.forgot-email a{color: #2C84C8; font-size: .9em; float: right;}
+.forgot-pass a:hover, .forgot-email a:hover{text-decoration: underline;}
+.login-web{ width: 100%;}
+.login-web p{ color: #000;}
+.login-web .send-mail{}
+.box-login-face{ background: #F9F9F9; padding: 10px; display: block; margin: 20px -20px -30px;}
+.box-login-face p{ color: #333; width: 55%; text-align: right; float: left;}

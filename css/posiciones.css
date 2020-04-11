@@ -1,0 +1,285 @@
+#contenido{
+	width: 80%;
+	max-width: 1000px;
+	margin: auto;
+	margin-bottom: 65%;
+}
+
+#contenido #posiciones {
+	width: 100%;
+	margin-top: 6%;
+	font-family: RobotoRegular;
+}
+
+#contenido #posiciones ul.titulo{
+	list-style: none;
+	display: flex;
+	width: 100%;
+	color: #fff;
+	font-family: RobotoRegular;
+	font-size: .9em;
+	border-radius: 5px;
+}
+
+
+#contenido #posiciones ul.titulo li a{
+	padding: 10px 10%;
+	text-decoration: none;
+	display: block;
+	text-shadow: -2px -2px 1px #000, 
+				 2px 2px 1px #000, 
+				 -2px 2px 1px #000, 
+				 2px -2px 1px #000;
+
+}
+
+#contenido #posiciones .general{
+	width: 72%;
+	float: left;
+	color: #fff;
+	background-color: rgba(98, 98, 98, 0.8);
+	border-radius: 0 5px 5px 5px;
+	box-shadow: 0px 0px 8px 1px rgba(0,0,0,1);
+		-webkit-box-shadow: 0px 0px 8px 1px rgba(0,0,0,1);
+		-moz-box-shadow: 0px 0px 8px 1px rgba(0,0,0,1);
+	line-height: 1.5;
+    margin-bottom: 6%;
+}
+
+#contenido #posiciones .general article .puesto{
+	margin-top: 2%;
+	margin-bottom: 3%;
+	margin-left: 2%;
+}
+
+#contenido #posiciones .general article table{
+	width: 90%;
+	margin: 2% 4%;
+    font-size: .9em;
+}
+
+
+#contenido #posiciones .general article table tr{
+    border-bottom: 1px dotted white;
+}
+
+#contenido #posiciones .general article table #cabecera{
+	font-family: RobotoBold;
+	font-size: 1.1em;
+	font-style: bold;
+	margin-bottom: 2%;
+	color: #7c7b7b;
+	text-shadow: -1px -1px 1px #000, 
+				 1px 1px 1px #000, 
+				 -1px 1px 1px #000, 
+				 1px -1px 1px #000;
+}
+
+#contenido #posiciones .general article table #puntaje{
+	text-align: center;
+}
+
+#contenido #posiciones .general article table #posicion{
+   width: 12%;
+   padding-left: -4%;
+    text-align: center;
+}
+
+#contenido #posiciones .general article table #usuario{
+    text-transform: capitalize;
+    font-family: RobotoRegular;
+}
+
+#contenido #posiciones .general article table #ciudad{
+    text-transform: capitalize;
+    font-family: RobotoThin;
+}
+
+.activo {
+	background-color: rgba(98, 98, 98, 0.8);
+	border-radius: 5px 5px 0 0;
+	-webkit-box-shadow: 0px -3px 11px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px -3px 11px 2px rgba(0,0,0,0.75);
+box-shadow: 0px -3px 11px 2px rgba(0,0,0,0.75);
+}
+
+.yo{
+	color: #0B0B3B;
+}
+
+/*TABLET*/
+@media screen and (max-width: 780px), only screen and (max-device-width: 780px){ 
+	html { font-size: 70%; }
+	
+	body{
+		background-image: url(../Images/fondotablet.jpg);
+		background-attachment: fixed; 
+	}
+    
+    #menuCelular{
+        display: none;
+    }
+
+	#subheader #nombre{
+		width: 60%;
+	}
+
+	#subheader #nombre img{
+		width: 35%;
+	}
+
+	#subheader #logotipo{
+		width: 30%;
+		max-width: 450px;
+	}
+	
+	#subheader #logotipo img{
+		width: 20%;
+	}
+
+	#subheader #logotipo #rusia{
+		width: 30%;
+		margin-left: 25%;
+	}
+	
+	.proximospartidos{
+		display: none;
+	}
+
+	#menu{
+		margin-top: 15%;
+		margin-bottom: 5%;
+	}
+
+    .menu{
+        width: 90%;
+    }
+    
+	.menu ul li a.amenu{
+		font-size: 200%;
+		margin-top: 0;
+	}
+
+	.usuario p{
+		display: none;
+	}
+
+	.usuario img{
+		width: 5%;
+		margin-top: -1%;
+	}
+
+	.menuespecial{
+		font-size: 200%;
+	}
+	
+	#contenido{
+		width: 90%;
+	}
+
+	#contenido #posiciones ul.titulo{
+		font-size: 150%;
+	}
+
+	#contenido #posiciones .general article table{
+		width: 95%;
+		font-size: 150%;
+	}
+
+	#contenido #posiciones .general article table #cabecera{
+		font-size: 100%;
+	}
+
+	.panel-lateral{
+		font-size: 150%;
+		margin-bottom: 30%;
+	}
+
+	footer{
+		margin-top: 80%;
+	}
+
+	footer nav ul #final li a{
+		color: white;
+		font-size: 200%;
+	}
+}
+
+/*CELULAR*/
+@media screen and (max-width: 460px), only screen and (max-device-width: 460px){
+	html { font-size: 42.5%; }
+	
+	body{
+		background-image: url(../Images/fondoweb.jpg);
+		background-attachment: fixed; 
+	}
+    
+	#subheader #nombre{
+		width: 60%;
+	}
+
+	#subheader #nombre img{
+		width: 35%;
+	}
+
+	#subheader #logotipo{
+		width: 30%;
+		max-width: 450px;
+	}
+	
+	#subheader #logotipo img{
+		width: 20%;
+	}
+
+	#subheader #logotipo #rusia{
+		width: 30%;
+		margin-left: 25%;
+	}
+
+	#contenido #grupos #grupo #NombreGrupo{
+		font-size: 450%;
+	}
+
+	.proximospartidos{
+		display: none;
+	}
+    
+    .menu{
+        width: 90%;
+    }
+    
+    .menu ul li a.amenu{
+        font-size: 400%;
+        padding: 1% 2%;
+    }
+	
+	#contenido{
+		width: 90%;
+	}
+
+	#contenido #posiciones ul.titulo{
+		font-size: 400%;
+	}
+
+	#contenido #posiciones .general article table{
+		width: 95%;
+		font-size: 350%;
+	}
+
+	#contenido #posiciones .general article table #cabecera{
+		font-size: 100%;
+	}
+
+	.panel-lateral{
+		font-size: 250%;
+	}
+
+	footer{
+		margin-top: 50%;
+	}
+
+	footer nav ul #final li a{
+		color: white;
+		font-size: 200%;
+	}
+}

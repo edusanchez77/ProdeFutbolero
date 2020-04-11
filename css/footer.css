@@ -1,0 +1,96 @@
+/*FOOTER*/
+footer{
+	width: 100%;
+	margin: auto;
+	text-align: left;
+	background-color: rgba(49, 49, 49, 1);
+	overflow: hidden;
+	padding-top: 1%;
+    margin-top: 5%;
+}
+
+footer nav{
+	width: 80%;
+	max-width: 1000px;
+	margin: auto;
+	height: 100%;
+}
+
+footer nav ul li{
+	margin-top: 15px;
+	display: inline;
+	padding: 5px 0px 5px 15px;
+}
+
+footer nav ul li a{
+	text-decoration: none;
+	text-align: left;
+	color: grey;
+}
+
+footer nav ul li a:hover{
+	color: white;
+}
+
+footer nav ul #redes{
+	font-family: RobotoThin;
+	color: white;
+	font-size: 1.2em;
+	margin-bottom: 1%;
+	vertical-align: middle;
+}
+
+footer nav ul #redes p{
+	float: left;
+	margin-right: -1%;
+}
+
+footer nav ul #redes img{
+	width: 2.5%;
+	opacity: .5;
+}
+
+footer nav ul #redes img:hover{
+	opacity: 1;
+}
+
+footer nav ul #final{
+	font-family: RobotoThin;
+	font-size: 1em;
+	float: right;
+	margin-top: -4%;
+}
+
+/*TABLET*/
+@media screen and (max-width: 1000px){
+	footer{
+		padding-top: 2%;
+	}
+
+	footer nav{
+		width: 88%;
+	}
+
+	footer nav ul #redes{
+		margin-bottom: 2%;
+	}
+
+	footer nav ul #final li a{
+		color: white;
+		font-size: 100%;
+		margin-top: 12%;
+	}
+}
+
+/*CELULAR*/
+@media screen and (max-width: 600px), only screen and (max-device-width: 600px){
+
+	footer nav ul #redes{
+		margin-bottom: 1.5%;
+	}
+
+	footer nav ul #final li a{
+		color: white;
+		font-size: 200%;
+	}
+}

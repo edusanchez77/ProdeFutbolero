@@ -1,0 +1,44 @@
+@font-face {
+	font-family: Dusha;
+	src:url(../fuentes/DushaV5Regular.ttf);
+}
+
+@font-face {
+	font-family: CenturyRegular;
+	src:url(../fuentes/911Fonts.com_CenturyGothicRegular__-_911fonts.com_fonts_mhpY.ttf);
+}
+
+@font-face {
+	font-family: CenturyBold;
+	src:url(../fuentes/911Fonts.com_CenturyGothicBold__-_911fonts.com_fonts_pMgo.ttf);
+}
+
+@font-face {
+	font-family: RobotoBold;
+	src:url(../fuentes/Roboto-Bold.ttf);
+}
+
+@font-face {
+	font-family: RobotoRegular;
+	src:url(../fuentes/Roboto-Regular.ttf);
+}
+
+@font-face {
+	font-family: RobotoItalic;
+	src:url(../fuentes/RobotoCondensed-Italic.ttf);
+}
+
+@font-face {
+	font-family: RobotoThin;
+	src:url(../fuentes/Roboto-Thin.ttf);
+}
+
+@font-face {
+	font-family: HouseGothic;
+	src:url(fuentes/HouseGothicHG23Text-Light_23231.ttf);
+}
+
+@font-face {
+	font-family: RobotoCondensed;
+	src:url(fuentes/RobotoCondensed-Regular.ttf);
+}

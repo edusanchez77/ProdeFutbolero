@@ -1,0 +1,223 @@
+.panel-lateral{
+	width: 23%;
+	float: right;
+	background-color: rgba(98, 98, 98, 0.8);
+	padding: 1% 2%;
+	border-radius: 5px;
+	box-shadow: 0px 0px 8px 1px rgba(0,0,0,1);
+		-webkit-box-shadow: 0px 0px 8px 1px rgba(0,0,0,1);
+		-moz-box-shadow: 0px 0px 8px 1px rgba(0,0,0,1);
+}
+
+.panel-lateral .panel-cabecera{
+	width: 100%;
+	float: left;
+	border-bottom: 1px dashed #fff;
+	padding-bottom: 3%;
+}
+
+.panel-lateral .panel-cabecera .panel-cabecera-jugador{
+	float: left;
+	font-family: RobotoRegular;
+	font-size: 1em;
+	margin-left: 3%;
+	text-align: left;
+	width: 100%;
+}
+
+.panel-lateral .panel-cabecera .panel-cabecera-jugador #titulo{
+	color: #9f9f9f;
+	font-family: RobotoBold;
+	font-size: 1.1em;
+	text-shadow: -1px -1px 1px #000, 
+				 1px 1px 1px #000, 
+				 -1px 1px 1px #000, 
+				 1px -1px 1px #000;
+}
+
+.panel-lateral .panel-cabecera button{
+	width: 39%;
+	float: right;
+	background-color: rgba(98, 98, 98, 1);
+	border-radius: 5px;
+	font-family: RobotoRegular;
+	font-size: .6em;
+	color: #fff;
+	text-align: center;
+	padding: 2% 2%;
+	margin-right: 3%;
+	border: 1px outset black;
+	box-shadow: 5px 5px 4px 0px rgba(0,0,0,0.75);
+		-webkit-box-shadow: 5px 5px 4px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 5px 5px 4px 0px rgba(0,0,0,0.75);
+}
+
+.panel-lateral .panel-lateral-detalle{
+	width: 100%;
+	padding-top: 3%;
+	float: left;
+	text-align: left;
+}
+
+.panel-lateral .panel-lateral-detalle .panel-detalle-puntaje{
+	background-color: rgba(49, 49, 49, 1);
+	padding: 2% 0;
+	width: 100%;
+	float: left;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.panel-lateral .panel-lateral-detalle .panel-detalle-puntaje #titulo{
+	width: 47%;
+	font-family: RobotoBold;
+	font-size: 1.1em;
+	color: grey;
+	float: left;
+	margin-left: 3%;
+}
+
+.panel-lateral .panel-lateral-detalle .panel-detalle-puntaje #detalle{
+	width: 40%;
+	font-family: RobotoThin;
+	font-size: 2.5em;
+	float: right;	
+	text-align: right;
+	margin-right: 3%;
+	margin-top: -2%;
+}
+
+.panel-lateral .panel-lateral-detalle .panel-detalle-posgral, .panel-detalle-posciudad, .panel-detalle-pronostico{
+	background-color: rgba(49, 49, 49, 1);
+	padding: 2% 0;
+	width: 100%;
+	float: left;
+	border-radius: 5px;
+	margin-top: 3%;
+}
+
+.panel-lateral .panel-lateral-detalle .panel-detalle-posgral #titulo, .panel-detalle-posciudad #titulo{
+	width: 47%;
+	font-family: RobotoBold;
+	font-size: 1.1em;
+	color: grey;
+	float: left;
+	margin-left: 3%;
+}
+
+.panel-lateral .panel-lateral-detalle .panel-detalle-posgral #detalle, .panel-detalle-posciudad #detalle{
+	width: 40%;
+	font-family: RobotoThin;
+	font-size: 2.5em;
+	float: right;	
+	text-align: right;
+	margin-right: 3%;
+	margin-top: -2%;
+}
+
+.titulocampeon{
+	width: 30%;
+	margin-left: 3%;
+	float: left;
+	font-family: RobotoBold;
+	font-size: 1.1em;
+	color: grey;
+}
+
+.detallecampeon{
+	width: 40%;
+	float: right;
+	padding: 0px;
+	margin-right: 3%;
+	margin-top: 1%;
+}
+
+.panel-lateral .panel-lateral-detalle .panel-detalle-pronostico img{
+	width: 65%;
+	text-align: right;
+	float: right;
+	opacity: .6;
+	box-shadow: 0px 0px 8px 1px rgba(0,0,0,1);
+		-webkit-box-shadow: 0px 0px 8px 1px rgba(0,0,0,1);
+		-moz-box-shadow: 0px 0px 8px 1px rgba(0,0,0,1);
+}
+
+.panel-lateral-footer{
+	margin-top: 15%;
+	width: 100%;
+	float: left;
+	text-align: left;
+}
+
+.panel-lateral-footer .panel-lateral-footer-cabecera{
+	width: 100%;
+	float: left;
+	font-family: CenturyRegular;
+	font-size: 1em;
+}
+
+.panel-lateral-footer .panel-lateral-footer-cabecera p{
+	color: #9f9f9f;
+	font-family: RobotoBold;
+	font-size: 1.1em;
+	text-shadow: -1px -1px 1px #000, 
+				 1px 1px 1px #000, 
+				 -1px 1px 1px #000, 
+				 1px -1px 1px #000;
+}
+
+.panel-lateral-footer .panel-lateral-footer-detalle{
+	background-color: rgba(49, 49, 49, 1);
+	width: 100%;
+	float: left;
+	border-radius: 5px;
+	margin-top: 3%;
+	padding: 2% 0;
+}
+
+.panel-lateral-footer .panel-lateral-footer-detalle .panel-footer-datos{
+	width: 100%;
+	float: left;
+	margin: auto;
+}
+
+.panel-lateral-footer .panel-lateral-footer-detalle #titulo{
+	font-family: RobotoRegular;
+	color: #878787;
+	float: left;
+	margin-left: 3%;
+	margin-right: 3%;
+	font-size: .8em;
+}
+
+.panel-lateral-footer .panel-lateral-footer-detalle #detalle{
+	font-family: RobotoRegular;
+	color: white;
+	font-size: .75em;
+}
+
+.panel-lateral-footer .panel-lateral-footer-detalle #detalle-email{
+	font-family: RobotoRegular;
+	color: white;
+	font-size: .75em;
+	margin-left: 3%;
+}
+
+.panel-lateral-footer button{
+	width: 47%;
+	float: left;
+	background-color: rgba(98, 98, 98, 1);
+	border-radius: 5px;
+	font-family: RobotoRegular;
+	font-size: .6em;
+	color: #fff;
+	padding: 2% 0;
+	text-align: center;
+	margin-right: 3%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	border: 1px outset black;
+	box-shadow: 5px 7px 4px 0px rgba(0,0,0,0.75);
+		-webkit-box-shadow: 5px 7px 4px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 5px 7px 4px 0px rgba(0,0,0,0.75);
+}

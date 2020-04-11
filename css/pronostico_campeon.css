@@ -1,0 +1,173 @@
+#contenido{
+	width: 80%;
+	max-width: 1000px;
+	margin: auto;
+	margin-bottom: 50%;
+}
+
+#contenido #grupoequipos{
+	width: 100%;
+	float: left;
+	text-align: center;
+	background: #5a595c;
+	margin-top: 6%;
+	box-shadow: 0px 0px 25px 8px rgba(0,0,0,1);
+		-webkit-box-shadow: 0px 0px 25px 8px rgba(0,0,0,1);
+		-moz-box-shadow: 0px 0px 25px 8px rgba(0,0,0,1);
+	border-radius: 5px;
+}
+
+#titulo{
+	width: 88%;
+	margin: 3% auto;
+}
+
+#main #titulo h2{
+	font-family: RobotoBold;
+	color: #fff;
+	font-size: 25px;
+	transform:scaley(2);
+	text-shadow: -1px -1px 1px #000, 
+				 1px 1px 1px #000, 
+				 -1px 1px 1px #000, 
+				 1px -1px 1px #000;
+}
+
+#contenido #grupoequipos #banderas{
+	width: 10%;
+	text-align: center;
+	margin: 2% 0%;
+	float: left;
+	opacity: 0.5;
+	
+	margin-left: 2%;
+	cursor: pointer;
+}
+
+#contenido #grupoequipos #banderas:hover{
+	opacity: 1;
+	transition:all .4s ease-in-out;
+}
+
+#contenido #grupoequipos #banderas img{
+	width: 100%;
+}
+
+#contenido #grupoequipos #banderas #equipocampeon{
+	font-family: RobotoRegular;
+	color: white;
+	text-align: center;
+}
+
+.swal-title, .swal-text, .swal-button {
+  font-family: RobotoRegular;
+  text-align: center;
+}
+
+.swal-footer {
+  background-color: rgb(245, 248, 250);
+  margin-top: 32px;
+  border-top: 1px solid #E9EEF1;
+  overflow: hidden;
+}
+
+.swal-overlay {
+  background-color: rgba(49, 49, 49, .7);
+}
+
+.swal-button {
+  padding: 7px 19px;
+  border-radius: 2px;
+  background-color: #4962B3;
+  font-size: 12px;
+  border: none;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+/*TABLET*/
+@media screen and (max-width: 780px), only screen and (max-device-width: 780px){ 
+	html { font-size: 70%; }
+	
+	body{
+		background-image: url(../Images/fondotablet.jpg);
+		background-attachment: fixed; 
+	}
+
+
+	#subheader #nombre{
+		width: 60%;
+	}
+
+	#subheader #nombre img{
+		width: 35%;
+	}
+
+	#subheader #logotipo{
+		width: 30%;
+		max-width: 450px;
+	}
+	
+	#subheader #logotipo img{
+		width: 20%;
+	}
+
+	#subheader #logotipo #rusia{
+		width: 30%;
+		margin-left: 25%;
+	}
+	
+	.proximospartidos{
+		display: none;
+	}
+
+	#menu{
+		margin-top: 15%;
+		margin-bottom: 5%;
+	}
+
+    .menu{
+        width: 90%;
+    }
+    
+	.menu ul li a.amenu{
+		font-size: 200%;
+		margin-top: 0;
+	}
+
+	.usuario p{
+		display: none;
+	}
+
+	.usuario img{
+		width: 5%;
+		margin-top: -1%;
+	}
+
+	.menuespecial{
+		font-size: 120%;
+	}
+
+	#main{
+		margin-bottom: 180%;
+	}
+
+	#contenido{
+		width: 90%;
+		font-size: 200%;
+		margin-bottom: 10%;
+	}
+
+	#contenido #grupoequipos #banderas{
+		width: 22%;
+	}
+
+}
+
+/*CELULAR*/
+@media screen and (max-width: 460px), only screen and (max-device-width: 460px){
+    body{
+		background-image: url(../Images/fondoweb.jpg);
+		background-attachment: fixed; 
+	}
+}

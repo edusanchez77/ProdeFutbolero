@@ -1,0 +1,119 @@
+/*MENU*/
+#menu{
+	width: 100%;
+	background: #5a595c;
+	box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);	
+		-webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+	border-top: 2px inset #fff;
+	transition: all ease .5s;
+    align-content: center;
+	 -webkit-transition: all ease .5s;
+	 -moz-transition: all ease .5s;
+}
+
+#menuCelular{
+    display: none;
+}
+
+.menu{
+	width: 80%;
+	max-width: 1000px;
+	margin: auto;
+	padding: 1.5% 0;
+}
+
+.menu #logo{
+    width: 10%;
+    display: none;
+}
+
+.menu ul li{
+	display: inline;
+	font-family: RobotoRegular;
+}
+
+.menu ul li a.amenu{
+	font-size: 1.5em;
+	padding: 1% 1.5%;
+	border-radius: 10px;
+	  -moz-border-radius: 10px;
+	  -webkit-border-radius: 10px;
+	text-shadow: -2px -2px 1px #000, 
+				 2px 2px 1px #000, 
+				 -2px 2px 1px #000, 
+				 2px -2px 1px #000;
+}
+
+.menu ul li a.amenu:hover{
+	background-color: rgba(51, 51, 51, 1);
+	border: 1px outset black;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px 0px rgba(255,255,255,1);
+		-webkit-box-shadow: 0px 0px 5px 0px rgba(255,255,255,1);
+		-moz-box-shadow: 0px 0px 5px 0px rgba(255,255,255,1);
+}
+
+.usuario p{
+	float: right;
+	font-family: RobotoItalic;
+	margin-top: .5%;
+}
+
+.usuario img{
+	width: 3%;
+	float: right;
+}
+
+.usuario a{
+	cursor: pointer;
+}
+
+.menuespecial{
+	float: right;
+	width: 20%;
+	font-size: .8em;
+	margin-top: .7%;
+}
+
+.menuespecial .menua{
+	padding: 3%;
+}
+
+.menuespecial .menua:hover{
+	background-color: rgba(0, 0, 0, 1);
+}
+
+.active{
+	background-color: rgba(51, 51, 51, 1);
+	border: 1px outset black;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px 0px rgba(255,255,255,1);
+		-webkit-box-shadow: 0px 0px 5px 0px rgba(255,255,255,1);
+		-moz-box-shadow: 0px 0px 5px 0px rgba(255,255,255,1);
+}
+
+.swal-title, .swal-text, .swal-button {
+  font-family: RobotoRegular;
+}
+
+.swal-footer {
+  background-color: rgb(245, 248, 250);
+  margin-top: 32px;
+  border-top: 1px solid #E9EEF1;
+  overflow: hidden;
+}
+
+.swal-overlay {
+  background-color: rgba(49, 49, 49, .7);
+}
+
+.swal-button {
+  padding: 7px 19px;
+  border-radius: 2px;
+  background-color: #4962B3;
+  font-size: 12px;
+  border: none;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+  color: white;
+}

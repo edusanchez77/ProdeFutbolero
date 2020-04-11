@@ -1,0 +1,93 @@
+<?php
+	require_once("conexion.inc");
+	session_start();
+?>
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Prode Futbolero | Edición Rusia 2018</title>
+<style type="text/css">
+</style>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="js/query.js" type="text/javascript"></script>
+<script src="js/main.js" type="text/javascript"></script>
+<script src="js/registro.js" type="text/javascript"></script>
+<link href="css/registarse.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/registrarse.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+	
+	<section class="main">
+		<div class="logo">
+			<img src="Images/Logo/logo.png">
+		</div>
+		<div class="titulo">
+			<h2>REGISTRO</h2>
+		</div>
+		<div class="formulario">
+			<form action="" id="formlg">
+				<div class="inputBox"> 
+					<input type="text" name="nombre" required="">
+					<label>Nombre</label> 
+				</div> 
+				<div class="inputBox"> 
+					<input type="text" name="apellido" required=""> 
+					<label>Apellido</label> 
+				</div> 
+				<div class="inputBox"> 
+					<input type="text" name="ciudad" required="">
+					<label>Ciudad</label> 
+				</div> 
+				<div class="inputBox"> 
+					<input type="email" name="mail" required=""> 
+					<label>Email</label> 
+				</div> 
+				<div class="inputBox" id="fecha"> 
+					<input type="date" name="cumpleanios" step="1" min="1930-01-01" max="2013-12-31">
+					<label>Fecha de Nacimiento</label> 
+				</div> 
+				<div class="inputBox"> 
+					<input type="text" name="dni" required=""> 
+					<label>Nombre de usuario o DNI</label> 
+				</div> 
+				<div class="inputBox"> 
+					<input type="password" id="password" name="password" required=""> 
+					<label>Contraseña</label> 
+					<span id="passwordLength">Debe contener entre 6 y 12 caracteres</span>
+				</div> 
+				<div class="inputBox"> 
+					<input type="password" id="confirmarpassword" name="confirmarpassword" required=""> 
+					<label>Confirmar contraseña</label> 
+					<span id="passwordNoMatch">Las contraseñas no coinciden</span>
+				</div> 
+				<div class="radio-group">
+					<input type="radio" id="option-one" name="sex" value="M" required="">
+					<label for="option-one">HOMBRE</label>
+					<input type="radio" id="option-two" name="sex" value="F" required="">
+					<label for="option-two">MUJER</label>
+  				</div>
+  				<input type=hidden name="volver" value="N">
+				<input type="submit" id="submit" name="" value="CREAR CUENTA" class="botonlg">
+			</form> 
+		</div>
+		<div class="footer">
+			<div>
+				<a href="terminosIndex.php">Términos y condiciones</a>	
+			</div>
+			<div>
+				<a href="reglamentoIndex.php">Reglamento</a>
+			</div>
+		</div>
+	</section>
+	<script type="text/javascript" src="js/formulario.js"></script>
+</body>
+</html>

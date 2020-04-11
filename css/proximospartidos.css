@@ -1,0 +1,108 @@
+/*BODY*/
+#main{
+	padding-top: 1%;
+}
+
+/*PROXIMOS PARTIDOS*/
+.proximospartidos{
+	width: 80%;
+	max-width: 970px;
+	margin: auto;
+	margin-top: 8%;
+	margin-bottom: 2%;
+	border-radius: 5px;
+	background: rgba(163,162,162,.5);
+	box-shadow: 0px 0px 33px 8px rgba(0,0,0,1);
+		-webkit-box-shadow: 0px 0px 33px 8px rgba(0,0,0,1);
+		-moz-box-shadow: 0px 0px 33px 8px rgba(0,0,0,1);
+	border: 1px outset #000;
+	padding: 1% 0 1% 2%;
+	overflow: hidden;
+}
+
+.proximospartidos ul{
+	display: flex;
+	width: 200%;
+
+	animation: cambio 30s infinite ease-out; 
+}
+
+.proximospartidos ul li{
+	width: 100%;
+}
+
+@keyframes cambio{
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+
+	50% {margin-left: 0;}
+	70% {margin-left: 0;}
+
+	75% {margin-left: -100%;}
+	95% {margin-left: -100%;}
+}
+
+.proximospartidos p{
+	font-family: RobotoRegular;
+	text-shadow: -1.5px -1.5px 1px #000, 
+				 1.5px 1.5px 1px #000, 
+				 -1.5px 1.5px 1px #000, 
+				 1.5px -1.5px 1px #000;
+	font-size: 1.7em;
+	text-align: center;
+	margin: auto;
+}
+
+.partido{
+	width: 21%;
+	padding: 1%;
+	margin-top: 1%;
+	float: left;
+	border-right: 1px dotted white;
+}
+
+.equipo{
+	margin: 1% 0;
+	padding: 1% 2%;
+	overflow: hidden;
+}
+
+.partido .equipo img{
+	width: 20%;
+	float: left;
+	margin-top: 1%;
+}
+
+.partido .equipo p{
+	font-size: 1.2em;
+	margin-top: 2%;
+	margin-left: 4%;
+	float: left;
+	font-family: Dusha;
+}
+
+.partido .equipo input{
+	width: 15%;
+	border-radius: 5px;
+	border: none;
+	margin-top: 2%;
+	float: right;
+	box-shadow: 2px 2px 4px #000;
+		-webkit-box-shadow: 2px 2px 4px #000;
+		-moz-box-shadow: 2px 2px 4px #000;
+	text-align: center;
+	font-family: RobotoRegular;
+	color: #000;
+	
+}
+
+.ultimopartido{
+	border: none;
+}
+
+.primerpartido{
+	margin-left: 2%;
+}

@@ -1,0 +1,95 @@
+@import url(../css/reset.css);
+@import url(../css/fuentes.css);
+
+/*Estilos Generales*/
+body{
+	background-image: url(../Images/fondo_web.jpg) ;
+	background-attachment: fixed; 
+	background-position: center top;
+}
+
+p{
+	color: #fff;
+}
+
+a{
+	text-decoration: none;
+	color: #fff;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+/*HEADER*/
+header{
+	width: 100%;
+	float: left;
+	margin-top: 2%;
+}
+
+#subheader{
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+}
+
+#logotipo{
+	float: right;
+	width: 11.66%;
+	max-width: 150px;
+}
+
+#logotipo #copa{
+	width: 30%;
+	opacity: 0.6;
+}
+
+#logotipo #rusia{
+	position: relative;
+	width: 50%;
+	opacity: 0.6;
+	float: left;
+	margin-top: 15%;
+	margin-left: 7%;
+	margin-right: 5%;
+	transform:scaley(1.3);
+}
+
+#nombre{
+	float: left;
+	width: 72.5%;
+	height: 50%;
+	vertical-align: middle;
+	margin-top: -2%;
+}
+
+#nombre img{
+	width: 20%;
+	text-align: left;
+}
+
+/*CELULAR*/
+@media screen and (max-width: 600px), only screen and (max-device-width: 600px){
+	#subheader #nombre{
+		width: 60%;
+	}
+
+	#subheader #nombre img{
+		width: 35%;
+	}
+
+	#subheader #logotipo{
+		width: 30%;
+		max-width: 450px;
+	}
+	
+	#subheader #logotipo img{
+		width: 20%;
+	}
+
+	#subheader #logotipo #rusia{
+		width: 30%;
+		margin-left: 25%;
+	}
+}

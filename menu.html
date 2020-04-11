@@ -1,0 +1,19 @@
+<section id="menu">
+	<div class="menu">
+        <img src="Images/Logo/nombre.png" alt="" id="logo">
+		<ul>
+            <li><a class="amenu" href="jugar.php">JUGAR</a></li>
+            <li><a class="amenu" href="resultados.php">RESULTADOS</a></li>
+            <li><a class="amenu" href="posiciones.php">POSICIONES</a></li>
+            <li><a class="amenu" href="grupo.php?id=0">GRUPOS</a></li>
+            <li class="usuario"><a class="cerrarsesion" onclick="cerrarSesion()"><img src="Images/salir.png" title="Cerrar Sesión"></a><p>HOLA, <?php echo $nombre_usuario ?></p></li>
+            <?php
+                if ($dni_usuario == '29851491') {
+            ?>
+            <li class="menuespecial"><a class="menua" href="jugar_resultados.php">CARGAR RESULTADOS</a></li>
+            <?php
+                }
+            ?>
+		</ul>
+	</div>
+</section>

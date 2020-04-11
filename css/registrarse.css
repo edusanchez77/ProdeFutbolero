@@ -1,0 +1,375 @@
+@import url(../css/reset.css);
+@import url(../css/fuentes.css);
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+body{
+	background-image: url(../Images/fondo_web.jpg);
+	background-attachment: fixed; 
+}
+
+.main{
+	width: 40%;
+	max-width: 1000px;
+	margin: 2% auto;
+	background: rgba(194,192,192,.5);
+	border-radius: 5px;
+	padding: 1%;
+}
+
+.logo{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+}
+
+.logo img{
+	width: 50%;
+}
+
+.titulo{
+	font-family: RobotoRegular;
+	font-size: 1.5em;
+	margin-top: 1%;
+	margin-bottom: 2%;
+	margin-left: 24%;
+	text-shadow: -1px -1px 1px #cbcaca, 
+				 1px 1px 1px #cbcaca, 
+				 -1px 1px 1px #cbcaca, 
+				 1px -1px 1px #cbcaca;
+}
+
+.formulario{
+	width: 80%;
+	text-align: center;
+	margin: auto;
+}
+
+.formulario .inputBox { 
+	position: relative; 
+	width: 80%;
+	margin: auto;
+}
+
+.formulario span{
+	position: absolute;
+	display: block;
+	top: 20%;
+	left: 95%;
+	width: 50%;
+	background: red;
+	text-align: left;
+	padding: 1%;
+	font-family: RobotoRegular;
+	font-size: .8em;
+	color: white;
+	border-radius: 5px;
+}
+
+.formulario span img{
+	width: 20%;
+}
+
+.formulario form input{
+	width: 80%;
+	background: rgba(122,121,121,1);
+	border-radius: 5px;
+	color: white;
+	font-family: RobotoRegular;
+	margin: 2.5% auto;
+	padding-left: 3%;
+}
+
+.formulario .inputBox label { 
+	position: absolute;
+	top: 3%; left: 10%; 
+	padding: 10px 0; 
+	font-size: 16px; 
+	color: #cbcaca; 
+	pointer-events: none; 
+	transition: .5s; 
+	font-family: RobotoRegular;
+} 
+
+.formulario .inputBox input:focus ~ label, .formulario .inputBox input:valid ~ label { 
+	top: -16px; 
+	left: 10%; 
+	color: #084B8A; 
+	font-size: 12px; 
+	font-family: RobotoThin;
+} 
+
+.radio-group {
+  display: inline-block;
+  float: left;
+  margin-left: 16%;
+  margin-top: 1%;
+  border-radius: 5px;
+  overflow: hidden;
+  background: rgba(122,121,121,1);
+}
+
+input[type=radio] {
+  float: left;
+  visibility: hidden;
+  display: none;
+}
+
+.radio-group label {
+  color: #cbcaca;
+  display: inline-block;
+  cursor: pointer;
+  padding: 6px 10px;
+  float: left;
+  font-family: RobotoRegular;
+  font-size: .8em;
+}
+
+input[type=radio]:checked + label{
+  color: white;
+  background: #464a3b;
+}
+
+label + input[type=radio] + label {
+  border-left: 1px solid #a9b28a;
+}
+
+.formulario input[type="submit"]{
+	width: 30%;
+	padding: 1% 2%;
+	margin-top: 1%;
+	margin-right: 10%;
+	font-family: RobotoRegular;
+	font-size: .8em;
+	cursor: pointer;
+	background: #464a3b;
+	border: 1px outset black;
+	box-shadow: 5px 5px 4px 0px rgba(0,0,0,0.75);
+		-webkit-box-shadow: 5px 5px 4px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 5px 5px 4px 0px rgba(0,0,0,0.75);
+}
+
+.swal-title, .swal-text, .swal-button {
+  font-family: RobotoRegular;
+}
+
+.swal-footer {
+  background-color: rgb(245, 248, 250);
+  margin-top: 32px;
+  border-top: 1px solid #E9EEF1;
+  overflow: hidden;
+}
+
+.swal-overlay {
+  background-color: rgba(49, 49, 49, .7);
+}
+
+.swal-button {
+  padding: 7px 19px;
+  border-radius: 2px;
+  background-color: #4962B3;
+  font-size: 12px;
+  border: none;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.footer{
+	margin-top: 4%;
+	text-align: right;
+}
+
+.footer a{
+	text-align: right;
+	text-decoration: none;
+	color: black;
+	font-family: RobotoRegular;
+	font-size: .8em; 
+}
+
+/*tablet*/
+@media screen and (max-width: 780px), only screen and (max-device-width: 780px){ 
+	html { font-size: 70%; }
+	
+	body{
+		background-image: url(../Images/fondotablet.jpg);
+		background-attachment: fixed; 
+	}
+
+	.main{
+		width: 80%;
+		margin-top: 2%;
+	}
+    
+    .logo img{
+		width: 50%;
+	}
+    
+    .titulo h2{
+		font-size: 150%;
+		margin-bottom: 3%;
+        margin-top: 5%;
+        margin-left: 20%;
+	}
+    
+    .formulario{
+        width: 80%;
+    }
+    
+    .formulario .inputBox { 
+        width: 100%;
+        font-size: 250%;
+    }
+    
+    .formulario .inputBox label { 
+        position: absolute;
+        top: 18%; left: 10%; 
+        font-size: 70%; 
+    } 
+    
+    .formulario .inputBox input:focus ~ label, .formulario .inputBox input:valid ~ label{
+        font-size: 60%;
+        top: -18px; 
+    }
+        
+    .radio-group{
+        width: 84%;
+        margin-left: 8%;
+        margin-top: 3%;
+    }
+    
+    input[type=radio]{
+        width: 55%;
+    }
+            
+    .radio-group label{
+        font-size: 150%;
+        width: 49%;
+        padding: 6px 0px;
+    }
+    
+    .formulario input[type="submit"]{
+        width: 84%;
+        margin: auto;
+        margin-top: 5%;
+        font-size: 180%;
+    }
+    
+    .footer{
+		margin-top: 15%;
+	}
+
+	.footer a{
+		font-size: 170%; 
+		margin-bottom: 2%;
+	}
+}
+
+/*CELULAR*/
+@media screen and (max-width: 460px), only screen and (max-device-width: 460px){
+	html { font-size: 42.5%; }
+	
+	body{
+		background-image: url(../Images/fondoweb.jpg);
+		background-attachment: fixed; 
+	}
+    
+	#subheader #nombre{
+		width: 60%;
+	}
+
+	#subheader #nombre img{
+		width: 35%;
+	}
+
+	#subheader #logotipo{
+		width: 30%;
+		max-width: 450px;
+	}
+	
+	#subheader #logotipo img{
+		width: 20%;
+	}
+
+	#subheader #logotipo #rusia{
+		width: 30%;
+		margin-left: 25%;
+	}
+
+	#contenido #grupos #grupo #NombreGrupo{
+		font-size: 450%;
+	}
+
+	.proximospartidos{
+		display: none;
+	}
+    
+    .menu{
+        width: 90%;
+    }
+    
+    .menu ul li a.amenu{
+        font-size: 400%;
+        padding: 1% 2%;
+    }
+	
+	.main{
+		width: 90%;
+        margin-top: 10%;
+        font-size: 600%;
+	}
+    
+    .titulo{
+        margin-left: 0%;
+        font-size: 80%;
+    }
+    
+    .formulario{
+        width: 100%;
+    }
+    
+    .formulario .inputBox { 
+        width: 100%;
+        font-size: 90%;
+    }
+    
+    .formulario .inputBox label { 
+        position: absolute;
+        top: 18%; left: 10%; 
+        font-size: 90%; 
+    } 
+    
+    .formulario .inputBox input:focus ~ label, .formulario .inputBox input:valid ~ label{
+        font-size: 70%;
+        top: -22px; 
+    }
+        
+    .radio-group{
+        width: 84%;
+        margin-left: 8%;
+    }
+    
+    input[type=radio]{
+        width: 40%;
+    }
+            
+    .radio-group label{
+        font-size: 80%;
+        width: 45%;
+    }
+    
+    .formulario input[type="submit"]{
+        width: 84%;
+        margin: auto;
+        margin-top: 5%;
+        font-size: 90%;
+    }
+    
+    .footer{
+		margin-top: 15%;
+	}
+
+	.footer a{
+		font-size: 70%; 
+		margin-bottom: 2%;
+	}
+}

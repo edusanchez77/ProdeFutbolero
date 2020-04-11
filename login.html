@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Desafío Gol</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="expires" content="Sat, 01 Jan 2018 00:00:01 GMT">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="http://www.desafiogol.com/dg/assets/images/logo-lpf-352x128.png" type="image/x-icon" >
+  <link rel="stylesheet" href="http://www.desafiogol.com/dg/assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://www.desafiogol.com/dg/assets/animate.css/animate.min.css">
+  <link rel="stylesheet" href="http://www.desafiogol.com/dg/assets/mobirise/css/style.css">
+  <link rel="stylesheet" href="http://www.desafiogol.com/dg/css/facebook.css">
+  <link rel="stylesheet" href="http://www.desafiogol.com/dg/css/home.css">
+  <link rel="stylesheet" href="http://www.desafiogol.com/dg/assets/mobirise/css/mbr-additional.css" type="text/css">
+  <link rel="stylesheet" href="http://www.desafiogol.com/dg/css/jquery-ui.min.css" />
+  <style type="text/css" id="jarallax-clip-0">#jarallax-container-0 {
+     clip: rect(0px 2007px 1311px 0);
+     clip: rect(0px, 2007px, 1311px, 0);
+  }</style>
+  </head>
+<body class="index ">
+	<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MPT3HJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MPT3HJ');</script>
+<!-- End Google Tag Manager --><!-- MENU    -->    
+<section class="mbr-navbar mbr-navbar--freeze mbr-navbar--absolute mbr-navbar--sticky mbr-navbar--collapsed" id="ext_menu-0">
+    <div class="mbr-navbar__section mbr-section">
+        <div class="mbr-section__container container">
+            <div class="mbr-navbar__container">
+                <!-- BRAND  -->  
+                <div class="mbr-navbar__column mbr-navbar__column--s mbr-navbar__brand">
+                    <span class="mbr-navbar__brand-link mbr-brand mbr-brand--inline">
+                        <span class="mbr-brand__logo">
+							<a href="http://www.desafiogol.com/dg/">
+								<img src="http://www.desafiogol.com/dg/assets/images/logo-lpf-352x128.png" class="mbr-navbar__brand-img mbr-brand__img" alt="Desafio Gol">
+							</a>
+						</span>
+                    </span>
+                </div>
+                <!-- HAMBURGER  -->  
+                <div class="mbr-navbar__hamburger mbr-hamburger"><span class="mbr-hamburger__line"></span></div>
+                <!-- MENU ITEMS  -->  
+                <div class="mbr-navbar__column mbr-navbar__menu">
+                    <nav class="mbr-navbar__menu-box mbr-navbar__menu-box--inline-right">
+                        <div class="mbr-navbar__column">
+                            <ul class="mbr-navbar__items mbr-navbar__items--right float-left mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-decorator mbr-buttons--active menu-items_dg">
+                                <li class="mbr-navbar__item padtop20">
+                                    <a class="mbr-buttons__link btn text-white" href="#valores">NUESTROS VALORES</a>
+                                </li>
+                                <li class="mbr-navbar__item">
+                                    <a class="mbr-buttons__link btn text-white" href="#presentacion">VIDEO PRESENTACION</a>
+                                </li>
+                                
+                                <li class="mbr-navbar__item">
+                                    <a class="mbr-buttons__link btn text-white" href="#torneos">TORNEOS</a>
+                                </li>
+                                
+                                <li class="mbr-navbar__item">
+                                    <a class="mbr-buttons__link btn text-white" href="#suscripcion">SUSCRIPCION</a>
+                                </li>
+                                <li class="mbr-navbar__item">
+                                    <a class="mbr-buttons__link btn text-white" href="#premios">PREMIOS</a>
+                                </li>
+                            </ul>    
+                        </div>
+                    </nav>
+                </div>
+				<!-- MENU BOTON INGRESAR -->        
+                <div class="nav nav-home">
+					<div class="login button_solo"><span></span><a class="mbr-buttons__btn btn btn-wrap btn-xs-lg btn-info grad_buttons">INGRESAR</a></div>
+				    <div class="box-login">
+					        <span class="tip-box-login"></span>
+						    <form action="http://www.desafiogol.com/dg/user/login" class="form-login" method="post" accept-charset="utf-8">
+						    <div class="login-web">
+						        <input placeholder="Email" type="text" name="login_email" id="user" class="form-error" value="">
+						        <input placeholder="Contraseña" type="password" name="login_password" id="password" class="form-error" value="">
+						        <input type="submit" name="loginbutton" value="Ingresar" class="input-ingresar">
+						        <span class="forgot-pass"><a href="#" class="forgot-password">Olvidé mi contraseña</a></span>
+						        						    </div>
+					        <div class="clear"></div>
+					    </form>
+				    </div>
+				</div>
+                  <!-- MENU TITULARES  --> 
+                <div class="mbr-navbar__titulares">                
+                    <ul class="mbr-navbar__items mbr-navbar__items--right mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-inverse mbr-buttons--active menu_pad2 button_solo">
+                       <li class="mbr-navbar__item">
+                           <div class="mbr-navbar__column nav_text_main">
+                            <h3 class="nav_txt text-white">Futbol Manager <span class="white">Argentino</span></h3>
+                            <h4 class="nav_txt text-white">Temporada 2017-2018</h4>
+                           </div>
+                       </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- CONTENIDO  -->     
+<section class="engine"><a rel="external" href="http://www.desafiogol.com/dg/">DESAFIO GOL</a></section>
+    <section class="mbr-box mbr-section mbr-section--fixed-size mbr-section--full-height mbr-section--bg-adapted mbr-parallax-background" id="header1-2" style="background-image: url(http://www.desafiogol.com/dg/assets/images/back_home_03.jpg);">
+    <div class="mbr-box__magnet mbr-box__magnet--sm-padding mbr-box__magnet--center-left mbr-after-navbar">
+        <!-- OVERLAY  --> 
+        <div class="mbr-overlay back_overlay"></div>
+        <div class="img-main mbr-box__container mbr-section__container container">
+            <div class="mbr-box mbr-box--stretched">
+                <div class="mbr-box__magnet ">
+                    <div class="row">
+                        <div class="col-center">
+                               <div class="mbr-hero animated fadeInUp img_head">
+                                    <img src="http://www.desafiogol.com/dg/assets/images/tit_batalla.png" alt="Batalla de los técnicos | Golear o Morir"/>
+                               </div>
+                          </div>
+                     </div>    
+                    <div class="row">
+                        <div class="mbr-section__col col-xs-12 col-sm-6 col-center">
+                              <div class="mbr-plan col-xs-12 mbr-plan--info col-md-9 form_home col-md-offset-4 col-sm-6">
+                                <div class="form-home mbr-plan__box">   
+                                <!--   TITULO FORM     -->
+                                    <div class="mbr-plan__header">
+                                        <div class="mbr-header mbr-header--reduce mbr-header--center mbr-header--wysiwyg">
+                                            <h3 class="mbr-header__text">REGISTRE SU EQUIPO</h3>
+                                        </div>
+                                    </div>
+								    												
+									<form action="http://www.desafiogol.com/dg/user/register" id="register-form" class="register-form" method="post" accept-charset="utf-8">
+                                     <div class="mbr-plan__details">
+										 <input type="hidden" name="country" id="country"/>
+										 <input type="hidden" name="state" id="state"/>
+										 <input type="hidden" name="city" id="city"/>
+										 <input type="hidden" name="latitude" id="latitude"/>
+										 <input type="hidden" name="longitude" id="longitude"/>
+										 <input type="hidden" name="ip" id="ip"/>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" value="" name="first_name" placeholder="Nombre" data-form-field="Name">
+                                        </div>
+                                        <div class="form-group">
+											<input placeholder="Apellido" class="form-control" type="text" name="last_name" value="">
+                                        </div>
+										<div class="form-group">
+                                            <input placeholder="Email" type="text" name="email" class="form-control " value="">
+                                        </div>
+                                        <div class="form-group">
+											<input placeholder="Contraseña" class="form-control" type="password" name="password"/>
+                                        </div>
+                                        <div class="form-group">
+											 <input placeholder="Repetir contraseña" class="form-control" type="password" name="confirm_password"/>
+                                        </div>
+                                        <!-- TEAM_NAME FIELD -->
+<div class="form-group">
+    <span id="team-icon"></span>
+    <input placeholder="Nombre de tu equipo (Máx 11 caracteres)" type="text" maxlength="11" name="team_name" class="form-control" value="">
+</div>
+<!-- DNI FIELD -->
+<div class="form-group">
+	<div class="white"><p>Ingresá tu DNI para poder acceder a los premios.</p></div>
+	<input placeholder="DNI" type="text" name="passport" class=" form-control" value="">
+</div>
+<!-- ID_TEAM FIELD -->
+<div class="form-group">
+    <input type="text" placeholder="Hincha de" name="id_team" class=" form-control" value="">
+</div>
+<!-- BIRTHDAY FIELD -->
+<div class="form-group">
+	<div class="white"><p>Fecha de nacimiento</p></div> 
+	<div class="box-birthday">
+    <select name="birth_day" class="register-field">
+<option value=""></option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+</select>
+<select name="birth_month" class="register-field">
+<option value=""></option>
+<option value="1">Ene</option>
+<option value="2">Feb</option>
+<option value="3">Mar</option>
+<option value="4">Abr</option>
+<option value="5">May</option>
+<option value="6">Jun</option>
+<option value="7">Jul</option>
+<option value="8">Ago</option>
+<option value="9">Sep</option>
+<option value="10">Oct</option>
+<option value="11">Nov</option>
+<option value="12">Dic</option>
+</select>
+<select name="birth_year" class="register-field">
+<option value=""></option>
+<option value="1999">1999</option>
+<option value="1998">1998</option>
+<option value="1997">1997</option>
+<option value="1996">1996</option>
+<option value="1995">1995</option>
+<option value="1994">1994</option>
+<option value="1993">1993</option>
+<option value="1992">1992</option>
+<option value="1991">1991</option>
+<option value="1990">1990</option>
+<option value="1989">1989</option>
+<option value="1988">1988</option>
+<option value="1987">1987</option>
+<option value="1986">1986</option>
+<option value="1985">1985</option>
+<option value="1984">1984</option>
+<option value="1983">1983</option>
+<option value="1982">1982</option>
+<option value="1981">1981</option>
+<option value="1980">1980</option>
+<option value="1979">1979</option>
+<option value="1978">1978</option>
+<option value="1977">1977</option>
+<option value="1976">1976</option>
+<option value="1975">1975</option>
+<option value="1974">1974</option>
+<option value="1973">1973</option>
+<option value="1972">1972</option>
+<option value="1971">1971</option>
+<option value="1970">1970</option>
+<option value="1969">1969</option>
+<option value="1968">1968</option>
+<option value="1967">1967</option>
+<option value="1966">1966</option>
+<option value="1965">1965</option>
+<option value="1964">1964</option>
+<option value="1963">1963</option>
+<option value="1962">1962</option>
+<option value="1961">1961</option>
+<option value="1960">1960</option>
+<option value="1959">1959</option>
+<option value="1958">1958</option>
+<option value="1957">1957</option>
+<option value="1956">1956</option>
+<option value="1955">1955</option>
+<option value="1954">1954</option>
+<option value="1953">1953</option>
+<option value="1952">1952</option>
+<option value="1951">1951</option>
+<option value="1950">1950</option>
+<option value="1949">1949</option>
+<option value="1948">1948</option>
+<option value="1947">1947</option>
+<option value="1946">1946</option>
+<option value="1945">1945</option>
+</select>
+	</div> 
+</div>
+<!-- GENDER FIELD -->
+<div class="form-group">
+	<div class="box-gender">
+     <select name="gender" class="form-control">
+<option value="" selected="selected">Género</option>
+<option value="M">Masculino</option>
+<option value="F">Femenino</option>
+</select>
+	
+	 </div>
+</div>                                        <div class="form-check">
+                                           <label class="form-check-label">
+                                             <input type="checkbox" class="form-check-input" name="conditions" value="1" autocomplete="off">
+                                               Acepto los <a href="http://www.desafiogol.com/dg/Legales-desafioGol.pdf" target="_blank">términos y condiciones</a>
+                                           </label>
+                                        </div>
+                                        </div>     
+                                        <div class="mbr-plan__buttons">
+                                        	<div class="mbr-buttons mbr-buttons--center">
+												<button type="submit" onClick="_gaq.push(['_trackEvent', 'Register', 'Count a new inscription', 'registro', '360']);" class="mbr-buttons__btn btn btn-wrap btn-xs-lg btn-info btn-block ">CONFIRMAR</button>
+											</div>
+                                        </div>
+                                    </form>                    
+                                       
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+				</div>
+			</div>			
+        </div>
+    </div>
+</section>
+<!-- VALORES   -->
+<section class="mbr-section mbr-section--relative mbr-section--fixed-size" id="valores" style="background-color: rgb(0, 0, 0);">
+    <div class="mbr-section__container mbr-section__container--std-top-padding mbr-section__container--sm-bot-padding mbr-section-title container" style="padding-top: 12px;">
+        <div class="mbr-header mbr-header--center mbr-header--wysiwyg row">
+            <div class="col-sm-8 col-sm-offset-2">
+            </div>
+        </div>
+    </div>
+    <div class="mbr-section__container container">
+        <div class="mbr-section__row row items_home">
+            <div class="mbr-section__col col-xs-12 col-md-3 col-sm-6 padding-bottom40">
+                <div class="mbr-section__container mbr-section__container--middle">
+					<div class="mbr-header mbr-header--reduce mbr-header--center mbr-header--wysiwyg" style="margin-top: 20px;">
+                        <h3 class="text-grandient_01">EQUIDAD</h3>
+                    </div>
+                </div>
+                <div class="mbr-section__container mbr-section__container--middle">
+                    <div class="mbr-article mbr-article--wysiwyg">
+                        <p>En nuestro mundo nadie gana pagando durante la competencia.</p>
+                        <p>Todos los managers tienen igualdad de oportunidades.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mbr-section__col col-xs-12 col-md-3 col-sm-6 padding-bottom40">
+                <div class="mbr-section__container mbr-section__container--middle">
+                    <div class="mbr-header mbr-header--reduce mbr-header--center mbr-header--wysiwyg" style="margin-top: 20px;">
+                        <h3 class="text-grandient_01">LIBERTAD</h3>
+                    </div>
+                </div>
+                <div class="mbr-section__container mbr-section__container--middle">
+                    <div class="mbr-article mbr-article--wysiwyg">
+                        <p>Sin presupuesto.</p>
+                        <p>Sin restricciones.</p> 
+                        <p>Sin límites.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix visible-sm-block"></div>
+            <div class="mbr-section__col col-xs-12 col-md-3 col-sm-6 padding-bottom40">
+                <div class="mbr-section__container mbr-section__container--middle">
+					<div class="mbr-header mbr-header--reduce mbr-header--center mbr-header--wysiwyg" style="margin-top: 20px;">
+                        <h3 class="text-grandient_01">JUSTICIA</h3>
+                    </div>
+                </div>
+                <div class="mbr-section__container mbr-section__container--middle">
+                    <div class="mbr-article mbr-article--wysiwyg">
+                        <p>La puntuación de su equipo es en función a resultados objetivos.</p>
+                        <p>No espere valoraciones subjetivas del periódico.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mbr-section__col col-xs-12 col-md-3 col-sm-6">
+                <div class="mbr-section__container mbr-section__container--middle">
+                    <div class="mbr-header mbr-header--reduce mbr-header--center mbr-header--wysiwyg" style="margin-top: 20px;">
+                        <h3 class="text-grandient_01">TRANSPARENCIA</h3>
+                    </div>
+                </div>
+                <div class="mbr-section__container mbr-section__container--middle">
+                    <div class="mbr-article mbr-article--wysiwyg">
+                        
+                            <p>Compita sumando por goles y valla invicta.</p>
+                            <p>Acceda a su puntuación en vivo y de manera inmediata</p>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- VIDEO PRESENTACION   -->    
+<section class="mbr-section" id="presentacion" style="background-color: rgb(0, 0, 0);">
+    <div class="mbr-section__container container mbr-section__container--isolated">
+        <div class="row animated">
+            <div class="col-sm-8 col-sm-offset-2 ">
+                <figure class="mbr-figure mbr-figure--wysiwyg mbr-figure--full-width mbr-figure--no-bg mbr-figure--caption-outside-bottom">
+                    <div><iframe class="mbr-embedded-video" src="https://www.youtube.com/embed/R-ms6MJoSVY?rel=0&amp;amp;showinfo=0&amp;autoplay=0&amp;loop=0" width="1280" height="720" frameborder="0" allowfullscreen></iframe></div>
+                    <figcaption class="mbr-figure__caption mbr-figure__caption--no-padding">
+                        <small class="mbr-figure__caption-small">Presentación de Video institucional</small>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>    
+<!-- TORNEOS   -->
+<section class="mbr-section mbr-section--relative mbr-section--fixed-size" id="torneos" style="background-color: rgb(0, 0, 0);">
+    <div class="mbr-section__container mbr-section__container--std-top-padding mbr-section__container--sm-bot-padding mbr-section-title container" style="padding-top: 12px;">
+        <div class="mbr-header mbr-header--center mbr-header--wysiwyg row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <img src="http://www.desafiogol.com/dg/assets/images/separador_laurel.png" class="img-responsive"/>
+                <h2 class="text-grandient_01">TORNEOS</h2>
+            </div>
+        </div>
+    </div>
+    <div class="mbr-section__container container">
+        <div class="mbr-section__row row items_home">
+            <div class="mbr-section__col col-xs-12 col-md-3 col-sm-6">
+                <div class="mbr-section__container mbr-section__container--middle">
+                    <div class="mbr-header mbr-header--reduce mbr-header--center mbr-header--wysiwyg">
+                        <img src="assets/images/copa_liga.png" alt="Copa Liga Desafío GOL"/>
+                        <h3 class="text-grandient_01 margin-b-box">Liga Desafío GOL</h3>
+                    </div>
+                </div>
+                <div class="mbr-section__container mbr-section__container--middle">
+                    <div class="mbr-article mbr-article--wysiwyg">
+                        <p>Participe de la liga más desafiante de la República Argentina. Competirá en cada fecha contra otro técnico mano a mano bajo la modalidad de eliminación directa. Atrévase a ingresar a una batalla donde solo los campeones sobrevivirán.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mbr-section__col col-xs-12 col-md-3 col-sm-6">
+                <div class="mbr-section__container mbr-section__container--middle padding-b-box">
+                    <div class="mbr-header mbr-header--reduce mbr-header--center mbr-header--wysiwyg">
+                        <img src="http://www.desafiogol.com/dg/assets/images/copa_maestros.png" alt="Torneo de Maestros"/>
+                        <h3 class="text-grandient_01 margin-b-box">Torneo de Maestros</h3>
+                    </div>
+                </div>
+                <div class="mbr-section__container mbr-section__container--middle">
+                    <div class="mbr-article mbr-article--wysiwyg">
+                        <p>Conformado por salas de 16 equipos.</p> 
+                        <p>Cada manager competirá en rondas regulares de todos contra todos. Quien pueda sobrevivir accederá al más duro de los Playoffs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix visible-sm-block"></div>
+            <div class="mbr-section__col col-xs-12 col-md-3 col-sm-6">
+                <div class="mbr-section__container mbr-section__container--middle padding-b-box">
+                    <div class="mbr-header mbr-header--reduce mbr-header--center mbr-header--wysiwyg">
+                        <img src="http://www.desafiogol.com/dg/assets/images/copa_potreros.png" alt="Copa de los Potreros"/>
+                        <h3 class="text-grandient_01 margin-b-box">Copa de los Potreros</h3>
+                    </div>
+                </div>
+                <div class="mbr-section__container mbr-section__container--middle">
+                    <div class="mbr-article mbr-article--wysiwyg">
+                        <p>Encuentre la esencia máxima del fútbol. Cada manager será parte de grupos reducidos de 4 a 6 equipos dentro de un total de 64 equipos. Sólo los mejores de cada fase clasificarán para batirse a duelo mano a mano en los Playoffs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mbr-section__col col-xs-12 col-md-3 col-sm-6">
+                <div class="mbr-section__container mbr-section__container--middle">
+                    <div class="mbr-header mbr-header--reduce mbr-header--center mbr-header--wysiwyg">
+                        <img src="http://www.desafiogol.com/dg/assets/images/copa_retoamigos.png" alt="Copa Reto de Amigos"/>
+                        <h3 class="text-grandient_01 margin-b-box">Reto de Amigos</h3>
+                    </div>
+                </div>
+                <div class="mbr-section__container mbr-section__container--middle">
+                    <div class="mbr-article mbr-article--wysiwyg">
+                        <p>Invoque a sus amigos a retos en salas de 16 jugadores. Competirá bajo una modalidad de todos contra todos para clasificar a la fase final donde solo triunfará el más apto.</p>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>    
+<!-- SUSCRIPCION   -->
+<section class="mbr-section mbr-section--relative mbr-section--fixed-size" id="suscripcion" style="background-color: rgb(0, 0, 0);">
+    <div class="mbr-section__container mbr-section__container--std-top-padding mbr-section__container--sm-bot-padding mbr-section-title container ">
+        <div class="mbr-header mbr-header--center mbr-header--wysiwyg row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <img src="http://www.desafiogol.com/dg/assets/images/separador_laurel.png" class="img-responsive" />
+                <h2 class="text-grandient_01">SUSCRIPCIÓN</h2>
+            </div>
+        </div>
+    </div>
+    <!-- TARJETAS   -->
+    <div class="col-sm-8 col-sm-offset-2 padding-bottom40">
+                <div class="mbr-section__container mbr-section__container--middle">
+                    <div class="mbr-header mbr-header--reduce mbr-header--center mbr-header--wysiwyg">
+                        <h3 class="titular text-grandient_01">FORMAS DE PAGO </h3>
+                    </div>
+                </div>
+                <div class="mbr-section__container mbr-section__container--middle ">
+                    <div class="mbr-article mbr-article--wysiwyg">
+                        <p class="text-center">Podrá abonar el valor del juego mediante todas las opciones disponibles y beneficios otorgados por la plataforma <span class="white">Mercado Pago</span> ya sea por tarjeta o en efectivo. Los pagos en efectivo pueden realizarse impriendo su cupón y abonando en <span class="white">Rapipago</span> o <span class="white">Pago Fácil</span> más cerca a su domicilio.</p>
+                        <p class="text-center">Dispone de beneficios en 1 a 12 cuotas sin interés con las tarjetas y medios de pago ofrecidos por <span class="white">Mercado Pago</span>.
+                        </p>          
+                    </div>
+                </div>
+                <div class="mbr-section__col col-xs-12">
+                     <div class="mbr-section__container mbr-section__container--middle">
+                        <div class="mbr-article mbr-article--wysiwyg text-center">
+                            <h4 class="titular text-grandient_01 center-txt" >PAGOS EN EFECTIVO </h4>
+                            <div class="inline-centered-list">
+                                  <ul>
+                                    <li class="payment-icon-settings icon_pagofacil"></li>
+                                    <li class="payment-icon-settings icon_rapipago"></li>
+                                  </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mbr-section__col col-xs-12">
+                     <div class="mbr-section__container mbr-section__container--middle">
+                        <div class="mbr-article mbr-article--wysiwyg">
+                            <h4 class="titular text-grandient_01 center-txt">PAGOS CON TARJETA DE CRÉDITO Y DÉBITO </h4>
+                            <div class="inline-centered-list">
+                                  <ul>
+                                    <li class="payment-icon-settings icon_visa"></li>
+                                    <li class="payment-icon-settings icon_mastercard02"></li>
+                                    <li class="payment-icon-settings icon_amex"></li>
+                                    <li class="payment-icon-settings icon_mercadopago"></li>
+                                    <li class="payment-icon-settings icon_naranja"></li>
+                                    <li class="payment-icon-settings icon_tarjeta_shopping"></li>
+                                    <li class="payment-icon-settings icon_nativa"></li>
+                                    <li class="payment-icon-settings icon_cencosud"></li>
+                                    <li class="payment-icon-settings icon_cabal"></li>
+                                    <li class="payment-icon-settings icon_argencard"></li>
+                                    <li class="payment-icon-settings icon_diners"></li>
+                                    <li class="payment-icon-settings icon_cordobesa"></li>
+                                    <li class="payment-icon-settings icon_cmr"></li>
+                                    <li class="payment-icon-settings icon_cordial"></li>
+                                    <li class="payment-icon-settings icon_visa_debito"></li>
+                                    <li class="payment-icon-settings icon_mastercard_debito"></li>
+                                    <li class="payment-icon-settings icon_maestro02"></li>
+                                    <li class="payment-icon-settings icon_cabal_debito"></li>
+                                  </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <div class="mbr-section__container container">
+        <div class="mbr-section__row row items_home">
+            <div class="mbr-section__col col-xs-12 col-md-4 col-sm-6 padding-bottom40">
+                <div class="mbr-section__container mbr-section__container--middle padding-b-box">
+                    <div class="mbr-header mbr-header--reduce mbr-header--center mbr-header--wysiwyg">
+                        <h3 class="text-grandient_01 margin-b-box">VALOR DE SUCRIPCIÓN</h3>
+                    </div>
+                </div>
+                <div class="mbr-section__container mbr-section__container--middle">
+                    <div class="mbr-article mbr-article--wysiwyg">
+                        <p>Podrá acceder al juego abonando el valor con descuento promocional luego de suscribir su equipo. Los registros con mayor plazo de antelación a la fecha de inicio tendrán acceso a mayores bonificaciones promocionales.</p>
+                        <p>La suscripción es válida para jugar la totalidad de los torneos de Desafío Gol correspondiente a la temporada 2017-2018.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mbr-section__col col-xs-12 col-md-4 col-sm-6">
+                <div class="mbr-section__container mbr-section__container--middle padding-b-box">
+                    <div class="mbr-header mbr-header--reduce mbr-header--center mbr-header--wysiwyg">
+                        <h3 class="text-grandient_01 margin-b-box">ACCESO</h3>
+                    </div>
+                </div>
+                <div class="mbr-section__container mbr-section__container--middle">
+                    <div class="mbr-article mbr-article--wysiwyg">
+                        <p>Una vez completado el formulario de inscripción y abonada su suscripción, se habilitará el acceso al armado de su equipo hasta que comiencen los 3 torneos de Desafío GOL 2017-2018.</p>   
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix visible-sm-block"></div>
+            <div class="mbr-section__col col-xs-12 col-md-4 col-sm-6">
+                <div class="mbr-section__container mbr-section__container--middle padding-b-box">
+                    <div class="mbr-header mbr-header--reduce mbr-header--center mbr-header--wysiwyg">
+                        <h3 class="text-grandient_01 margin-b-box">LÍMITES DE SUSCRIPCIÓN</h3>
+                    </div>
+                </div>
+                <div class="mbr-section__container mbr-section__container--middle">
+                    <div class="mbr-article mbr-article--wysiwyg">
+                        <p>Los cupos de ingreso a los torneos son limitadas. El cierre de inscripción a Desafío Gol está limitado en base a la cantidad de usuarios que se registren.</p>
+                    </div>
+                </div>
+            </div>          
+        </div>
+    </div>
+</section>    
+<!-- PREMIOS   -->
+<section class="mbr-section mbr-section--relative mbr-section--fixed-size padding-bottom40" id="premios" style="background-color: rgb(0, 0, 0);">
+    <div class="mbr-section__container mbr-section__container--std-top-padding mbr-section__container--sm-bot-padding mbr-section-title container" style="padding-top: 12px;">
+        <div class="mbr-header mbr-header--center mbr-header--wysiwyg row">
+            <div class="col-sm-8 col-center">
+                <img src="http://www.desafiogol.com/dg/assets/images/separador_laurel.png" class="img-responsive" />
+                <h2 class="text-grandient_01">PREMIOS</h2>
+             </div>
+            <img src="http://www.desafiogol.com/dg/assets/images/premios_portada_home.jpg" class="img-responsive" alt="premios"/>
+        </div>
+    </div>
+    <div class="mbr-section__container container">
+        <div class="mbr-section__row row items_home">
+            <div class="mbr-section__col col-xs-12 col-md-3 col-sm-6 padding-bottom40">
+                <div class="mbr-section__container mbr-section__container--middle padding-b-box">
+                    <div class="mbr-header mbr-header--reduce mbr-header--center mbr-header--wysiwyg">  
+                        <h3 class="text-grandient_01 margin-b-box">Pasajes a Rusia</h3>
+                    </div>
+                </div>
+                <div class="mbr-section__container mbr-section__container--middle">
+                    <div class="mbr-article mbr-article--wysiwyg">
+                        <p>El manager que acumule la mayor cantidad de millas gol, será acreedor de 2 pasajes a Rusia en el momento que se dispute la máxima competencia del fútbol internacional durante el año 2018.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mbr-section__col col-xs-12 col-md-3 col-sm-6 padding-bottom40">
+                <div class="mbr-section__container mbr-section__container--middle padding-b-box">
+                    <div class="mbr-header mbr-header--reduce mbr-header--center mbr-header--wysiwyg">
+                        <h3 class="text-grandient_01 margin-b-box">Tablets</h3>
+                    </div>
+                </div>
+                <div class="mbr-section__container mbr-section__container--middle">
+                    <div class="mbr-article mbr-article--wysiwyg">
+                        <p>Cada semana, al finalizar cada fecha, se conocerá el manager que más goles haya convertido con su equipo y será ganador de una tablet de 7".</p>   
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix visible-sm-block"></div>
+            <div class="mbr-section__col col-xs-12 col-md-3 col-sm-6 padding-bottom40">
+                <div class="mbr-section__container mbr-section__container--middle padding-b-box">
+                    <div class="mbr-header mbr-header--reduce mbr-header--center mbr-header--wysiwyg">
+                        <h3 class="text-grandient_01 margin-b-box">Notebooks</h3>
+                    </div>
+                </div>
+                <div class="mbr-section__container mbr-section__container--middle">
+                    <div class="mbr-article mbr-article--wysiwyg">
+                        <p>Al término de cada fecha el manager que haya convertido 11 o más goles será ganador de 1 notebook para continuar creando sus mejores equipos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mbr-section__col col-xs-12 col-md-3 col-sm-6 padding-bottom40">
+                <div class="mbr-section__container mbr-section__container--middle padding-b-box">
+                    <div class="mbr-header mbr-header--reduce mbr-header--center mbr-header--wysiwyg">
+                        <h3 class="text-grandient_01 margin-b-box">LED TV y Premios Extra</h3>
+                    </div>
+                </div>
+                <div class="mbr-section__container mbr-section__container--middle">
+                    <div class="mbr-article mbr-article--wysiwyg">
+                        <p>Para aquellos que conformen el ranking general del 2do al 10mo puesto por millas gol, accederán a premios como TV Led, impresoras, set deportivos, de acuerdo al puesto que ocupen en el ranking.</p>          
+                    </div>
+                </div>
+            </div>
+        </div>
+	    <div class="mbr-section__container mbr-section__container--std-top-padding mbr-section__container--sm-bot-padding mbr-section-title container" style="padding-top: 12px;">
+	        <div class="mbr-header mbr-header--center mbr-header--wysiwyg row">
+	            <div class="col-sm-8 col-center">
+	                <h3 class="text-grandient_01">VIVA LA MÁXIMA EXPERIENCIA DEL</h3>
+					<h2 class="text-grandient_01">FÚTBOL MANAGER ARGENTINO</h2>
+	             </div>
+	        </div>
+	    </div>
+         <div class="mbr-arrow mbr-arrow--floating text-right">
+            <div class="mbr-section__container container">
+                <a class="mbr-arrow__link" href="#header1-2"><i class="glyphicon glyphicon-menu-up"></i></a>
+            </div>
+        </div>
+    </div>
+</section><!-- FOOTER  -->    
+<footer class="mbr-section mbr-section--relative mbr-section--fixed-size" id="footer1-4" style="background-color: rgb(16, 16, 16);">
+    <div class="mbr-section__container container text-center">
+        <div class="mbr-footer mbr-footer--wysiwyg row bd-footer">
+            <div class="col-sm-12">
+                <p class="mbr-footer__copyright">Copyright (c) 2015 - 2017 Desafio Gol. Todos los derechos reservados. </p>
+                <ul class="bd-footer-links">
+                  <li><a class="mbr-footer__link text-gray" href="http://www.desafiogol.com/dg/Legales-desafioGol.pdf" target="_blank">Términos y Condiciones</a></li>
+                <li><a class="mbr-footer__link text-gray" href="http://www.desafiogol.com/dg/politicas-privacidad.pdf" target="_blank">Políticas de Privacidad</a></li>
+                </ul>
+                <p>Solo para mayores de 18 años.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src='http://www.desafiogol.com/dg/js/facebook.min.js?ver=fa.js'></script>	<script src="http://www.desafiogol.com/dg/js/html2canvas.min.js"></script>
+	<script src="http://www.desafiogol.com/dg/js/circle-progress.min.js"></script>
+	<script> var BASE_URL = 'http://www.desafiogol.com/dg/';</script>
+	<script src="http://www.desafiogol.com/dg/js/global.min.js?ver=aa.js"></script>
+	<script src="http://www.desafiogol.com/dg/assets/web/assets/jquery/jquery.min.js"></script>
+	<script src="http://www.desafiogol.com/dg/assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="http://www.desafiogol.com/dg/assets/smooth-scroll/smooth-scroll.min.js"></script>
+	<script src="http://www.desafiogol.com/dg/assets/jarallax/jarallax.min.js"></script>
+	<script src="http://www.desafiogol.com/dg/assets/mobirise/js/script.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    <script>
+        $(function(){
+            $('html').click(function() {
+                if($('.box-login:visible')){
+                    $('.box-login').hide();
+                }
+            });
+
+            $('.box-login').click(function(e){
+                e.stopPropagation();
+            });
+        });
+    </script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+    
+	    $.fn.preloadImages("img/back-button-green.jpg","img/back-button-blue2.jpg","img/back-button-blue.jpg");
+
+	    $(".ver-registro").click(function(){
+	       $(".register, .form-login, .ver-registro").toggle();
+
+	    });
+
+	    $("input[name=team_name]").keyup( function() {
+	        var team_length = $(this).val().length
+	        if( team_length > 11 || team_length < 4 ){
+	           $(this).removeClass('ok');
+	           $(this).addClass('error');
+	           $(this).siblings().removeClass('icon-ok');
+	           $(this).siblings().addClass('icon-error');
+	        } else {
+	            $(this).removeClass('error');
+	            $(this).addClass('ok');
+	            $(this).siblings().removeClass('icon-error');
+	            $(this).siblings().addClass('icon-ok');
+	        }
+	    });
+	    $(".form-error").focus(function () {
+	        $(this).removeClass('form-error');
+	    });
+	    $( ".dni-input" ).hover(function() {
+	        $( ".box-dni" ).toggle( 0, function() {});
+	    });
+	    $( ".popup-lanzamiento" ).click(function() {
+	        $( ".popup-lanzamiento" ).toggle( 0, function() {});
+	    });
+	});
+	</script>
+	<script type="text/javascript" charset="utf-8">
+	  var _uf = _uf || {};
+	  _uf.domain = ".desafiogol.com";
+	</script>
+	<script src="http://www.desafiogol.com/dg/js/utm_form-1.0.4.min.js" async></script>
+    <script>
+        $.ajax({
+            url: "https://geoip-db.com/jsonp",
+            jsonpCallback: "callback",
+            dataType: "jsonp",
+            success: function( location ) {
+                $('#country').val(location.country_name);
+                $('#state').val(location.state);
+                $('#city').val(location.city);
+                $('#latitude').val(location.latitude);
+                $('#longitude').val(location.longitude);
+                $('#ip').val(location.IPv4);  
+            }
+        });     
+    </script>
+</body>
+</html>

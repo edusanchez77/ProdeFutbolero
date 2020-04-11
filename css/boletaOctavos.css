@@ -1,0 +1,529 @@
+#contenido{
+	width: 80%;
+	max-width: 1000px;
+	margin: auto;
+}
+
+#contenido #grupo{
+	margin-top: 6%;
+	font-family: Dusha;
+	font-size: 25px;
+	transform:scaley(2);
+	text-align: center;
+	text-shadow: -2px -2px 1px #000, 
+				 2px 2px 1px #000, 
+				 -2px 2px 1px #000, 
+				 2px -2px 1px #000;
+}
+
+#contenido #partidos{
+	width: 100%;
+}
+
+#contenido #partidos #fecha{
+	font-family: RobotoRegular;
+	font-size: 15px;
+	margin-top: 3%;
+	margin-bottom: 2%;
+	margin-left: 2%;
+	text-shadow: 2px 1px 1px rgba(0, 0, 0, 1);
+}
+
+#contenido #partidos #partido{
+	width: 95.5%;
+	height: 30%;
+	margin-bottom: 1%;
+	background-color: rgba(102, 102, 102, 0.8);
+	border-radius: 3px;
+	padding-top: 0.4%;
+	padding-bottom: 0.2%;
+	padding-left: 2%;
+	padding-right: 2%;
+	vertical-align: middle;
+	font-family: Dusha;
+	color: #FFFFFF;
+	box-shadow: 0px 0px 8px 1px rgba(0,0,0,1);
+		-webkit-box-shadow: 0px 0px 8px 1px rgba(0,0,0,1);
+		-moz-box-shadow: 0px 0px 8px 1px rgba(0,0,0,1);
+	overflow: hidden;
+	
+}
+
+#contenido #partidos #partido #dia{
+	float: left;
+	width: 13%;
+	height: 100%;
+	padding-top: 0.8%;
+	text-align: left;
+	font-family: RobotoItalic;
+	text-shadow: -1px -1px 1px #000, 
+				 1px 1px 1px #000, 
+				 -1px 1px 1px #000, 
+				 1px -1px 1px #000;
+	margin-right: 2%;
+}
+
+#contenido #partidos #partido #banderalocal{
+	float: left;
+	width: 10%;
+	text-align: right;
+}
+
+#contenido #partidos #partido #banderavisitante{
+	float: left;
+	width: 10%;
+	text-align: left;
+}
+
+#contenido #partidos #partido #banderalocal img{
+	width: 50%;
+	margin-right: 10%;
+	box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+		-webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+}
+
+#contenido #partidos #partido #banderavisitante img{
+	width: 50%;
+	margin-left: 10%;
+	box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+		-webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+}
+
+#contenido #partidos #partido #equipolocal{
+	float: left;
+	width: 17%;
+	font-size: 1.2em;
+	transform:scaley(1.5);
+	padding-top: 0.4%;
+	text-shadow: -1px -1px 1px #000, 
+				 1px 1px 1px #000, 
+				 -1px 1px 1px #000, 
+				 1px -1px 1px #000;
+}
+
+#contenido #partidos #partido #equipovisitante{
+	float: left;
+	width: 17%;
+	font-size: 1.2em;
+	transform:scaley(1.5);
+	padding-top: 0.4%;
+	text-align: right;
+	text-shadow: -1px -1px 1px #000, 
+				 1px 1px 1px #000, 
+				 -1px 1px 1px #000, 
+				 1px -1px 1px #000;
+}
+
+#contenido #partidos #partido #equipolocal p{
+	margin-left: 10%;
+}
+
+#contenido #partidos #partido #equipovisitante p{
+	margin-right: 10%;
+}
+	
+#contenido #partidos #partido #local{
+	float: left;
+	width: 3%;
+	padding-top: 0.4%;
+}
+
+#contenido #partidos #partido #local input{
+	width: 100%;
+	border: 1px solid #fff;
+	border-radius: 7px;
+	text-align: center;
+	font-family: RobotoRegular;
+	box-shadow: 2px 2px 4px #000;
+		-webkit-box-shadow: 2px 2px 4px #000;
+		-moz-box-shadow: 2px 2px 4px #000;
+}
+
+#contenido #partidos #partido #separador{
+	float: left;
+	width: 10%;
+	padding-top: 0.5%;
+	text-align: center;
+}
+
+#contenido #partidos #partido #visitante{
+	float: left;
+	width: 3%;
+	padding-top: 0.4%;
+}
+
+#contenido #partidos #partido #visitante input{
+	width: 100%;
+	border: 1px solid #fff;
+	border-radius: 7px;
+	text-align: center;
+	font-family: RobotoRegular;
+	box-shadow: 2px 2px 4px #000;
+		-webkit-box-shadow: 2px 2px 4px #000;
+		-moz-box-shadow: 2px 2px 4px #000;
+}
+
+#contenido #partidos #partido #sede{
+	float: right;
+	width: 13%;
+	padding-top: 0.8%;
+	text-align: right;
+	font-family: RobotoItalic;
+	text-shadow: -1px -1px 1px #000, 
+				 1px 1px 1px #000, 
+				 -1px 1px 1px #000, 
+				 1px -1px 1px #000;
+}
+
+.botones{
+	margin-right: 2.2%;
+	margin-bottom: 20%;
+}
+
+#main form input[type=submit], input[type=button]{
+	background: transparent;
+	border: none;
+	color: #fff;
+	float: right;
+	margin-top: 5%;
+	margin-left: 2%;
+	font-family: RobotoRegular;
+	font-size: 1.2em;
+	padding: 1% 1.5%;
+	text-shadow: -2px -2px 1px #000, 
+				 2px 2px 1px #000, 
+				 -2px 2px 1px #000, 
+				 2px -2px 1px #000;
+	cursor: pointer;
+}
+
+#main form input[type=submit]:hover, input[type=button]:hover{
+	background-color: rgba(51, 51, 51, 1);
+	border: 1px outset black;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px 0px rgba(255,255,255,1);
+		-webkit-box-shadow: 0px 0px 5px 0px rgba(255,255,255,1);
+		-moz-box-shadow: 0px 0px 5px 0px rgba(255,255,255,1);
+}
+
+.swal-title, .swal-text, .swal-button {
+  font-family: RobotoRegular;
+}
+
+.swal-footer {
+  background-color: rgb(245, 248, 250);
+  margin-top: 32px;
+  border-top: 1px solid #E9EEF1;
+  overflow: hidden;
+}
+
+.swal-overlay {
+  background-color: rgba(49, 49, 49, .7);
+}
+
+.swal-button {
+  padding: 7px 19px;
+  border-radius: 2px;
+  background-color: #4962B3;
+  font-size: 12px;
+  border: none;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+
+/*TABLET*/
+@media screen and (max-width: 780px), only screen and (max-device-width: 780px){ 
+	html { font-size: 70%; }
+	
+	body{
+		background-image: url(../Images/fondotablet.jpg);
+		background-attachment: fixed; 
+	}
+    
+    #menuCelular{
+        display: none;
+    }
+
+	#subheader #nombre{
+		width: 60%;
+	}
+
+	#subheader #nombre img{
+		width: 35%;
+	}
+
+	#subheader #logotipo{
+		width: 30%;
+		max-width: 450px;
+	}
+	
+	#subheader #logotipo img{
+		width: 20%;
+	}
+
+	#subheader #logotipo #rusia{
+		width: 30%;
+		margin-left: 25%;
+	}
+	
+	.proximospartidos{
+		display: none;
+	}
+
+	#menu{
+		margin-top: 15%;
+		margin-bottom: 5%;
+	}
+
+    .menu{
+        width: 90%;
+    }
+    
+	.menu ul li a.amenu{
+		font-size: 200%;
+		margin-top: 0;
+	}
+
+	.usuario p{
+		display: none;
+	}
+
+	.usuario img{
+		width: 5%;
+		margin-top: -1%;
+	}
+
+	.menuespecial{
+		font-size: 200%;
+	}
+	
+	#contenido{
+		width: 90%;
+	}
+
+	#contenido #grupo p{
+		font-size: 170%;
+	}
+
+	#contenido #partidos #fecha p{
+		font-size: 170%;
+		margin-top: 5%;
+	}
+
+	#contenido #partidos form #partido{
+		font-size: 150%;
+		padding-top: 1%;
+		padding-bottom: 1%;
+	}
+
+	#contenido #partidos #partido #local{
+		padding-top: 0;
+	}
+
+	#contenido #partidos #partido #visitante{
+		padding-top: 0;
+	}
+
+	#contenido #partidos form #partido #sede{
+		width: 15%;
+	}
+	/*#contenido #partidos form #partido #dia{
+		display: none;
+		width: 0px;
+	}
+
+	#contenido #partidos form #partido #banderalocal{
+		width: 10%;
+	}
+
+	#contenido #partidos form #partido #banderalocal img{
+		width: 70%;
+	}
+
+	#contenido #partidos form #partido #banderavisitante img{
+		width: 70%;
+	}
+
+	#contenido #partidos form #partido #equipolocal{
+		width: 27%;
+	}
+
+	#contenido #partidos form #partido #local{
+		width: 6%;
+		padding-top: 0;
+	}
+
+	#contenido #partidos form #partido #separador{
+		width: 10%;
+	}
+
+	#contenido #partidos form #partido #equipovisitante{
+		width: 27%;
+	}
+
+	#contenido #partidos form #partido #visitante{
+		width: 6%;
+		padding-top: 0;
+	}
+
+	#contenido #partidos form #partido #banderavisitante{
+		width: 10%;
+	}
+
+	#contenido #partidos form #partido #sede{
+		display: none;
+		width: 0px;
+	}*/
+
+	.botones{
+		font-size: 150%;
+		margin-right: 0%;
+		margin-bottom: 21%;
+	}
+
+	footer nav{
+		width: 100%;
+	}
+
+	footer nav ul #final li a{
+		color: white;
+		font-size: 200%;
+		margin-top: 14%;
+	}
+}
+
+/*CELULAR*/
+@media screen and (max-width: 460px), only screen and (max-device-width: 460px){
+	html { font-size: 42.5%; }
+	
+	body{
+		background-image: url(../Images/fondoweb.jpg);
+		background-attachment: fixed; 
+	}
+    
+	#subheader #nombre{
+		width: 60%;
+	}
+
+	#subheader #nombre img{
+		width: 35%;
+	}
+
+	#subheader #logotipo{
+		width: 30%;
+		max-width: 450px;
+	}
+	
+	#subheader #logotipo img{
+		width: 20%;
+	}
+
+	#subheader #logotipo #rusia{
+		width: 30%;
+		margin-left: 25%;
+	}
+
+	#contenido #grupos #grupo #NombreGrupo{
+		font-size: 450%;
+	}
+
+	.proximospartidos{
+		display: none;
+	}
+    
+    .menu{
+        width: 90%;
+    }
+    
+    .menu ul li a.amenu{
+        font-size: 400%;
+        padding: 1% 2%;
+    }
+	
+	#contenido{
+		width: 90%;
+	}
+    
+    #contenido #grupo{
+        margin-bottom: 0%;
+    }
+
+	#contenido #grupo p{
+		font-size: 150%;
+	}
+
+	#contenido #partidos #fecha p{
+		font-size: 170%;
+		margin-top: 8%;
+		margin-left: 2.5%;
+	}
+
+	#contenido #partidos form #partido{
+		font-size: 370%;
+		padding-top: 1%;
+		padding-bottom: 1%;
+	}
+
+	#contenido #partidos form #partido #dia{
+		display: none;
+		width: 0px;
+	}
+
+	#contenido #partidos form #partido #banderalocal{
+		width: 10%;
+	}
+
+	#contenido #partidos form #partido #banderalocal img{
+		width: 70%;
+	}
+
+	#contenido #partidos form #partido #banderavisitante img{
+		width: 70%;
+	}
+
+	#contenido #partidos form #partido #equipolocal{
+		width: 27%;
+	}
+
+	#contenido #partidos form #partido #local{
+		width: 6%;
+		padding-top: 0;
+	}
+
+	#contenido #partidos form #partido #separador{
+		width: 10%;
+	}
+
+	#contenido #partidos form #partido #equipovisitante{
+		width: 27%;
+	}
+
+	#contenido #partidos form #partido #visitante{
+		width: 6%;
+		padding-top: 0;
+	}
+
+	#contenido #partidos form #partido #banderavisitante{
+		width: 10%;
+	}
+
+	#contenido #partidos form #partido #sede{
+		display: none;
+		width: 0px;
+	}
+
+	.botones{
+		font-size: 300%;
+		margin-right: 0%;
+		margin-top: 5%;
+		margin-bottom: 50%;
+	}	
+
+	footer nav ul #final li a{
+		color: white;
+		font-size: 200%;
+	}
+}
